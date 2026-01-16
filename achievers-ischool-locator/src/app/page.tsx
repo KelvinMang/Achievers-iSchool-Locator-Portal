@@ -17,6 +17,11 @@ const HK_BOUNDS = {
   west: 113.83,
 };
 
+const BASE_PATH =
+  process.env.NODE_ENV === "production"
+    ? "/Achievers-iSchool-Locator-Portal"
+    : "";
+
 export default function Home() {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY;
 
@@ -96,12 +101,12 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b border-achievers-primary/10 bg-achievers-primary">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-left px-4 lg:px-6">
           <Image
-            src="/achievers-logo-white.png"
+            src={`${BASE_PATH}/achievers-logo-white.png`}
             alt="The Achievers"
             width={260}
             height={70}
             priority
-            className="ml-4 h-16 w-auto scale-25 brightness-0 invert lg:ml-6"
+            className="ml-4 h-16 w-auto scale-250 brightness-0 invert lg:ml-6"
           />
         </div>
       </header>
