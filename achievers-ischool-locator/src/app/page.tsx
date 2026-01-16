@@ -65,14 +65,14 @@ export default function Home() {
     <main className="min-h-screen bg-white text-achievers-primary">
       {/* Top brand bar */}
       <header className="sticky top-0 z-50 border-b border-achievers-primary/10 bg-achievers-primary">
-        <div className="mx-auto flex h-20 max-w-7xl items-center justify-center px-4 lg:px-6">
+        <div className="mx-auto flex h-20 max-w-7xl items-center justify-left px-4 lg:px-6">
           <Image
             src="/achievers-logo-white.png"
             alt="The Achievers"
             width={260}
             height={70}
             priority
-            className="h-14 w-auto brightness-0 invert"
+            className="ml-4 h-16 w-auto scale-250 brightness-0 invert lg:ml-6"
           />
         </div>
       </header>
@@ -163,11 +163,23 @@ export default function Home() {
                   className="w-full text-left rounded-xl border border-achievers-primary/10 bg-white px-4 py-3 transition hover:border-achievers-primary/30 hover:bg-achievers-primary/5"
                 >
                   <div className="flex items-start justify-between gap-3">
-                    <div className="text-sm font-medium leading-snug">
-                      {idx === 0 ? "Closest — " : ""}
-                      {s.name}
+                    <div className="flex-1">
+                      <div className="text-sm font-medium leading-snug">
+                        {idx === 0 ? "Closest — " : ""}
+                        {s.name}
+                      </div>
+                      {s.chineseName && (
+                        <div className="mt-1 text-xs text-achievers-primary/60">
+                          {s.chineseName}
+                        </div>
+                      )}
+                      {s.category && (
+                        <div className="mt-1 text-xs text-achievers-primary/50">
+                          {s.category}
+                        </div>
+                      )}
                     </div>
-                    <div className="text-xs text-achievers-primary/70">
+                    <div className="text-xs text-achievers-primary/70 whitespace-nowrap">
                       {s.distanceKm.toFixed(1)} km
                     </div>
                   </div>

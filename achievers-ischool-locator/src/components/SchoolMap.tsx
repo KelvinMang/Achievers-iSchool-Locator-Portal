@@ -6,6 +6,9 @@ import { darkMapStyle } from "@/lib/mapStyle";
 
 export type School = {
   name: string;
+  chineseName?: string;
+  abbreviation?: string;
+  category?: string;
   address: string;
   lat: number;
   lng: number;
@@ -62,7 +65,9 @@ export function SchoolMap({
         zoomControl: true,
         clickableIcons: false,
       }}
-      onLoad={(map) => (mapRef.current = map)}
+      onLoad={(map) => {
+        mapRef.current = map;
+      }}
       onClick={() => {
         onSelectSchool(null);
         setInfoOpen(false);
@@ -90,6 +95,16 @@ export function SchoolMap({
             <div style={{ fontWeight: 700, marginBottom: 6 }}>
               {selectedSchool.name}
             </div>
+            {selectedSchool.chineseName && (
+              <div style={{ fontSize: 13, marginBottom: 4, color: '#666' }}>
+                {selectedSchool.chineseName}
+              </div>
+            )}
+            {selectedSchool.category && (
+              <div style={{ fontSize: 11, marginBottom: 8, color: '#888' }}>
+                {selectedSchool.category}
+              </div>
+            )}
             <div style={{ fontSize: 12, opacity: 0.85, marginBottom: 10 }}>
               {selectedSchool.address}
             </div>
