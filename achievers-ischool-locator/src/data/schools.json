@@ -1,0 +1,609 @@
+[
+    {
+      "name": "Carmel School",
+      "address": "1/F & 2/F West Wing, Classroom 229 & 229A & Portion of 1/F & 2/F East Wing, 10-12 Borrett Road, Hong Kong",
+      "lat": 22.274,
+      "lng": 114.163
+    },
+    {
+      "name": "French International School of Hong Kong",
+      "address": "165 Blue Pool Road, Happy Valley, Hong Kong",
+      "lat": 22.261,
+      "lng": 114.192
+    },
+    {
+      "name": "German Swiss International School",
+      "address": "11 & 22 Guildford Road, The Peak, Hong Kong",
+      "lat": 22.266,
+      "lng": 114.161
+    },
+    {
+      "name": "Island Children's Montessori International Nursery and Kindergarten",
+      "address": "Unit C, Lower G/F & Unit B, Upper G/F, Dragon View Garden, 16 Tin Hau Temple Road, Hong Kong",
+      "lat": 22.282,
+      "lng": 114.194
+    },
+    {
+      "name": "International Montessori School",
+      "address": "Ma Hang Estate Phase III, Stanley, Hong Kong",
+      "lat": 22.219,
+      "lng": 114.210
+    },
+    {
+      "name": "Kellett School",
+      "address": "7 Lam Hing Street, Kowloon Bay, Kowloon, Hong Kong",
+      "lat": 22.324,
+      "lng": 114.207
+    },
+    {
+      "name": "(ESF) Glenealy School",
+      "address": "7 Hornsey Road, Mid-Levels, Hong Kong",
+      "lat": 22.279,
+      "lng": 114.154
+    },
+    {
+      "name": "(ESF) Island School",
+      "address": "20 Borrett Road, Mid-Levels, Hong Kong",
+      "lat": 22.275,
+      "lng": 114.157
+    },
+    {
+      "name": "(ESF) Peak School",
+      "address": "20 Plunkett's Road, The Peak, Hong Kong",
+      "lat": 22.273,
+      "lng": 114.155
+    },
+    {
+      "name": "St. Paul's Co-educational College",
+      "address": "33 MacDonnell Road, Mid-Levels, Hong Kong",
+      "lat": 22.276,
+      "lng": 114.156
+    },
+    {
+      "name": "St. Paul's College",
+      "address": "69 Bonham Road, Sai Ying Pun, Hong Kong",
+      "lat": 22.283,
+      "lng": 114.138
+    },
+    {
+      "name": "Chinese International School",
+      "address": "1 Hau Yuen Path, Braemar Hill, Hong Kong",
+      "lat": 22.284,
+      "lng": 114.198
+    },
+    {
+      "name": "DSC International School",
+      "address": "Taikoo Shing, Quarry Bay, Hong Kong",
+      "lat": 22.286,
+      "lng": 114.220
+    },
+    {
+      "name": "Kiangsu and Chekiang Primary School",
+      "address": "30 Ching Wah Street, North Point, Hong Kong",
+      "lat": 22.289,
+      "lng": 114.199
+    },
+    {
+      "name": "Kiangsu-Chekiang College, International Section",
+      "address": "20 Braemar Hill Road, North Point, Hong Kong",
+      "lat": 22.285,
+      "lng": 114.199
+    },
+    {
+      "name": "Korean International School",
+      "address": "55 Lei King Road, Sai Wan Ho, Hong Kong",
+      "lat": 22.285,
+      "lng": 114.221
+    },
+    {
+      "name": "(ESF) Quarry Bay School",
+      "address": "6 Hau Yuen Path, Braemar Hill, Hong Kong",
+      "lat": 22.284,
+      "lng": 114.199
+    },
+    {
+      "name": "Discovery Bay International School",
+      "address": "Discovery Bay, Lantau Island, New Territories, Hong Kong",
+      "lat": 22.296,
+      "lng": 114.008
+    },
+    {
+      "name": "(ESF) Discovery College",
+      "address": "38 Siena Avenue, Discovery Bay, Lantau Island, New Territories",
+      "lat": 22.304,
+      "lng": 114.015
+    },
+    {
+      "name": "Lantau International School",
+      "address": "Tong Fuk Village, Lantau Island, New Territories, Hong Kong",
+      "lat": 22.239,
+      "lng": 113.932
+    },
+    {
+      "name": "YMCA of Hong Kong Christian College",
+      "address": "2 Chung Yat Street, Tung Chung, New Territories, Hong Kong",
+      "lat": 22.288,
+      "lng": 113.940
+    },
+    {
+      "name": "American International School",
+      "address": "125 Waterloo Road, Kowloon Tong, Kowloon, Hong Kong",
+      "lat": 22.334,
+      "lng": 114.180
+    },
+    {
+      "name": "Australian International School Hong Kong",
+      "address": "3A Norfolk Road, Kowloon Tong, Kowloon, Hong Kong",
+      "lat": 22.332,
+      "lng": 114.175
+    },
+    {
+      "name": "(ESF) Beacon Hill School",
+      "address": "23 Ede Road, Kowloon Tong, Kowloon, Hong Kong",
+      "lat": 22.338,
+      "lng": 114.173
+    },
+    {
+      "name": "Christian Alliance P.C. Lau Memorial International School",
+      "address": "2 Fu Ning Street, Kowloon City, Kowloon, Hong Kong",
+      "lat": 22.324,
+      "lng": 114.188
+    },
+    {
+      "name": "(ESF) Jockey Club Sarah Roe School",
+      "address": "2A Tin Kwong Road, Homantin, Kowloon, Hong Kong",
+      "lat": 22.319,
+      "lng": 114.182
+    },
+    {
+      "name": "(ESF) King George V School",
+      "address": "2 Tin Kwong Road, Homantin, Kowloon, Hong Kong",
+      "lat": 22.319,
+      "lng": 114.181
+    },
+    {
+      "name": "Kingston International School",
+      "address": "113 Waterloo Road, Kowloon Tong, Kowloon, Hong Kong",
+      "lat": 22.329,
+      "lng": 114.179
+    },
+    {
+      "name": "(ESF) Kowloon Junior School",
+      "address": "20 Perth Street, Homantin, Kowloon, Hong Kong",
+      "lat": 22.320,
+      "lng": 114.176
+    },
+    {
+      "name": "Po Leung Kuk Ngan Po Ling College",
+      "address": "26 Sung On Street, To Kwa Wan, Kowloon, Hong Kong",
+      "lat": 22.319,
+      "lng": 114.190
+    },
+    {
+      "name": "Stamford American School Hong Kong",
+      "address": "25 Man Fuk Road, Homantin, Kowloon, Hong Kong",
+      "lat": 22.318,
+      "lng": 114.178
+    },
+    {
+      "name": "Yew Chung International School",
+      "address": "3 To Fuk Road, Kowloon Tong, Kowloon, Hong Kong",
+      "lat": 22.334,
+      "lng": 114.178
+    },
+    {
+      "name": "Nord Anglia International School Hong Kong",
+      "address": "11 On Tin Street, Lam Tin, Kowloon, Hong Kong",
+      "lat": 22.307,
+      "lng": 114.236
+    },
+    {
+      "name": "United Christian College (Kowloon East)",
+      "address": "2 Lee On Lane, Kwun Tong, Kowloon, Hong Kong",
+      "lat": 22.318,
+      "lng": 114.224
+    },
+    {
+      "name": "International College Hong Kong",
+      "address": "60 Sha Tau Kok Road, Sha Tau Kok, New Territories, Hong Kong",
+      "lat": 22.536,
+      "lng": 114.210
+    },
+    {
+      "name": "(ESF) Clearwater Bay School",
+      "address": "DD 229, Lot 235, Clearwater Bay Road, Sai Kung, New Territories",
+      "lat": 22.308,
+      "lng": 114.270
+    },
+    {
+      "name": "Creative Secondary School",
+      "address": "3 Pung Loi Road, Tseung Kwan O, New Territories, Hong Kong",
+      "lat": 22.326,
+      "lng": 114.260
+    },
+    {
+      "name": "G.T. (Ellen Yeung) College",
+      "address": "10 Ling Kwong Street, Tseung Kwan O, New Territories, Hong Kong",
+      "lat": 22.313,
+      "lng": 114.268
+    },
+    {
+      "name": "Hong Kong Academy",
+      "address": "33 Wai Man Road, Sai Kung, New Territories, Hong Kong",
+      "lat": 22.386,
+      "lng": 114.275
+    },
+    {
+      "name": "Hong Kong Chinese Christian Churches Union Logos Academy",
+      "address": "1 Kan Hok Lane, Tseung Kwan O, New Territories, Hong Kong",
+      "lat": 22.306,
+      "lng": 114.250
+    },
+    {
+      "name": "Shrewsbury International School Hong Kong",
+      "address": "10 Shek Kok Road, Tseung Kwan O, New Territories, Hong Kong",
+      "lat": 22.303,
+      "lng": 114.274
+    },
+    {
+      "name": "Hong Kong Baptist University Affiliated School Wong Kam Fai Secondary and Primary School",
+      "address": "6 On Muk Lane, Shek Mun, Sha Tin, New Territories, Hong Kong",
+      "lat": 22.388,
+      "lng": 114.210
+    },
+    {
+      "name": "International Christian School",
+      "address": "1 On Muk Lane, Shek Mun, Sha Tin, New Territories, Hong Kong",
+      "lat": 22.387,
+      "lng": 114.211
+    },
+    {
+      "name": "Li Po Chun United World College",
+      "address": "10 Lok Wo Sha Lane, Sai Sha Road, Ma On Shan, New Territories, Hong Kong",
+      "lat": 22.431,
+      "lng": 114.248
+    },
+    {
+      "name": "Pui Kiu College",
+      "address": "1 Tai Wai New Village Road, Tai Wai, Sha Tin, New Territories, Hong Kong",
+      "lat": 22.372,
+      "lng": 114.182
+    },
+    {
+      "name": "(ESF) Renaissance College",
+      "address": "5 Hang Ming Street, Ma On Shan, New Territories, Hong Kong",
+      "lat": 22.418,
+      "lng": 114.225
+    },
+    {
+      "name": "(ESF) Shatin College",
+      "address": "3 Lai Wo Lane, Fo Tan, Sha Tin, New Territories, Hong Kong",
+      "lat": 22.392,
+      "lng": 114.188
+    },
+    {
+      "name": "(ESF) Sha Tin Junior School",
+      "address": "3A Lai Wo Lane, Fo Tan, Sha Tin, New Territories, Hong Kong",
+      "lat": 22.393,
+      "lng": 114.189
+    },
+    {
+      "name": "Stewards Pooi Kei College",
+      "address": "56 Siu Lek Yuen Road, Sha Tin, New Territories, Hong Kong",
+      "lat": 22.383,
+      "lng": 114.212
+    },
+    {
+      "name": "Christian Alliance International School",
+      "address": "33 King Lam Street, Cheung Sha Wan, Kowloon, Hong Kong",
+      "lat": 22.336,
+      "lng": 114.148
+    },
+    {
+      "name": "Concordia International School",
+      "address": "68 Begonia Road, Yau Yat Chuen, Kowloon, Hong Kong",
+      "lat": 22.337,
+      "lng": 114.174
+    },
+    {
+      "name": "Delia Memorial School (Glee Path)",
+      "address": "1-3 Glee Path, Mei Foo, Kowloon, Hong Kong",
+      "lat": 22.337,
+      "lng": 114.140
+    },
+    {
+      "name": "Po Leung Kuk Choi Kai Yau School",
+      "address": "6 Caldecott Road, Piper's Hill, Kowloon, Hong Kong",
+      "lat": 22.344,
+      "lng": 114.159
+    },
+    {
+      "name": "Tsung Tsin Christian Academy",
+      "address": "3 Wai Chi Street, Shek Kip Mei, Kowloon, Hong Kong",
+      "lat": 22.334,
+      "lng": 114.166
+    },
+    {
+      "name": "Canadian International School",
+      "address": "36 Nam Long Shan Road, Aberdeen, Hong Kong",
+      "lat": 22.248,
+      "lng": 114.168
+    },
+    {
+      "name": "Hong Kong International School",
+      "address": "1 Red Hill Road, Tai Tam, Hong Kong",
+      "lat": 22.239,
+      "lng": 114.215
+    },
+    {
+      "name": "Independent Schools Foundation Academy",
+      "address": "1 Kong Sin Wan Road, Pokfulam, Hong Kong",
+      "lat": 22.265,
+      "lng": 114.130
+    },
+    {
+      "name": "(ESF) Kennedy School",
+      "address": "19 Sha Wan Drive, Pokfulam, Hong Kong",
+      "lat": 22.269,
+      "lng": 114.130
+    },
+    {
+      "name": "Singapore International School",
+      "address": "2 Police School Road, Wong Chuk Hang, Hong Kong",
+      "lat": 22.247,
+      "lng": 114.171
+    },
+    {
+      "name": "(ESF) South Island School",
+      "address": "50 Nam Fung Road, Wong Chuk Hang, Hong Kong",
+      "lat": 22.250,
+      "lng": 114.175
+    },
+    {
+      "name": "St Stephen's College",
+      "address": "22 Tung Tau Wan Road, Stanley, Hong Kong",
+      "lat": 22.219,
+      "lng": 114.212
+    },
+    {
+      "name": "The Harbour School",
+      "address": "2 Yee Wo Street, Causeway Bay, Hong Kong",
+      "lat": 22.281,
+      "lng": 114.185
+    },
+    {
+      "name": "Victoria Shanghai Academy",
+      "address": "19 Shum Wan Road, Aberdeen, Hong Kong",
+      "lat": 22.247,
+      "lng": 114.162
+    },
+    {
+      "name": "(ESF) West Island School",
+      "address": "250 Victoria Road, Pokfulam, Hong Kong",
+      "lat": 22.277,
+      "lng": 114.128
+    },
+    {
+      "name": "American School Hong Kong",
+      "address": "6 Ma Chung Road, Tai Po, New Territories, Hong Kong",
+      "lat": 22.442,
+      "lng": 114.175
+    },
+    {
+      "name": "International College Hong Kong Hong Lok Yuen",
+      "address": "3 & 3A Twentieth Street, Hong Lok Yuen, Tai Po, New Territories, Hong Kong",
+      "lat": 22.464,
+      "lng": 114.154
+    },
+    {
+      "name": "Japanese International School",
+      "address": "157 Blue Pool Road, Happy Valley, Hong Kong",
+      "lat": 22.263,
+      "lng": 114.187
+    },
+    {
+      "name": "Malvern College Hong Kong",
+      "address": "3 Fo Chun Road, Pak Shek Kok, New Territories, Hong Kong",
+      "lat": 22.430,
+      "lng": 114.214
+    },
+    {
+      "name": "Norwegian International School",
+      "address": "175 Kwong Fuk Road, Tai Po, New Territories, Hong Kong",
+      "lat": 22.448,
+      "lng": 114.169
+    },
+    {
+      "name": "Sear Rogers International School",
+      "address": "15 Tong Yam Street, Tai Hang Tung, Kowloon, Hong Kong",
+      "lat": 22.331,
+      "lng": 114.167
+    },
+    {
+      "name": "Harrow International School Hong Kong",
+      "address": "38 Tsing Ying Road, Tuen Mun, New Territories, Hong Kong",
+      "lat": 22.418,
+      "lng": 113.984
+    },
+    {
+      "name": "(ESF) Bradbury School",
+      "address": "43C Stubbs Road, Mid-Levels, Hong Kong",
+      "lat": 22.269,
+      "lng": 114.181
+    },
+    {
+      "name": "Dalton School Hong Kong",
+      "address": "11 & 13 Wai Chi Street, Shek Kip Mei, Kowloon, Hong Kong",
+      "lat": 22.332,
+      "lng": 114.165
+    },
+    {
+      "name": "Hong Kong Japanese School",
+      "address": "9 Hau Yuen Path, Braemar Hill, Hong Kong",
+      "lat": 22.282,
+      "lng": 114.199
+    },
+    {
+      "name": "St. Paul's Convent School",
+      "address": "140 Leighton Road, Causeway Bay, Hong Kong",
+      "lat": 22.279,
+      "lng": 114.186
+    },
+    {
+      "name": "International Christian Quality Music Secondary and Primary School",
+      "address": "182 Po Kong Village Road, Diamond Hill, Kowloon, Hong Kong",
+      "lat": 22.342,
+      "lng": 114.206
+    },
+    {
+      "name": "Diocesan Boys' School",
+      "address": "131 Argyle Street, Mong Kok, Kowloon, Hong Kong",
+      "lat": 22.325,
+      "lng": 114.174
+    },
+    {
+      "name": "Diocesan Girls' School",
+      "address": "1 Jordan Road, Jordan, Kowloon, Hong Kong",
+      "lat": 22.304,
+      "lng": 114.171
+    },
+    {
+      "name": "ELCHK Lutheran Academy",
+      "address": "25 Lam Hau Tsuen Road, Yuen Long, New Territories, Hong Kong",
+      "lat": 22.433,
+      "lng": 114.021
+    },
+    {
+      "name": "HKFYG Lee Shau Kee College",
+      "address": "12 Tin Kwai Road, Tin Shui Wai, New Territories, Hong Kong",
+      "lat": 22.457,
+      "lng": 114.004
+    },
+    {
+      "name": "Wycombe Abbey School Hong Kong",
+      "address": "17 Tin Wan Street, Aberdeen, Hong Kong",
+      "lat": 22.248,
+      "lng": 114.148
+    },
+    {
+      "name": "Island Waldorf School",
+      "address": "1/F, 455 Queen's Road West, Sai Wan, Hong Kong",
+      "lat": 22.285,
+      "lng": 114.135
+    },
+    {
+      "name": "San Wui Commercial Society YMCA of Hong Kong Christian School",
+      "address": "5 Kwong Lee Road, Sham Shui Po, Kowloon, Hong Kong",
+      "lat": 22.337,
+      "lng": 114.159
+    },
+    {
+      "name": "Spanish School of Hong Kong",
+      "address": "9-11 Shung Tak Street, Tai Po Market, New Territories, Hong Kong",
+      "lat": 22.448,
+      "lng": 114.168
+    },
+    {
+      "name": "California School",
+      "address": "3/F Front Block, Lung Ma Building, 550 Nathan Road, Yau Ma Tei, Kowloon, Hong Kong",
+      "lat": 22.314,
+      "lng": 114.171
+    },
+    {
+      "name": "Creative Primary School",
+      "address": "2A Oxford Road, Kowloon Tong, Kowloon, Hong Kong",
+      "lat": 22.336,
+      "lng": 114.177
+    },
+    {
+      "name": "Han Academy",
+      "address": "G/F-2/F, 33-35 Wong Chuk Hang Road, Aberdeen, Hong Kong",
+      "lat": 22.248,
+      "lng": 114.168
+    },
+    {
+      "name": "Bloom KKCA Academy",
+      "address": "7 Pui Tak Street, Shek Kip Mei, Kowloon, Hong Kong",
+      "lat": 22.336,
+      "lng": 114.168
+    },
+    {
+      "name": "YMCA Christian Academy",
+      "address": "70 Bridges Street, Sheung Wan, Hong Kong",
+      "lat": 22.285,
+      "lng": 114.150
+    },
+    {
+      "name": "Anfield School",
+      "address": "1 Lung Pak Street, Tai Wai, Sha Tin, New Territories, Hong Kong",
+      "lat": 22.374,
+      "lng": 114.183
+    },
+    {
+      "name": "Garden House Waldorf School",
+      "address": "Floral Villas, 18 Tso Wo Road, Sai Kung, New Territories, Hong Kong",
+      "lat": 22.336,
+      "lng": 114.270
+    },
+    {
+      "name": "Invictus School Hong Kong",
+      "address": "Monterey Place, 23 Tong Chun Street, Tseung Kwan O, New Territories, Hong Kong",
+      "lat": 22.308,
+      "lng": 114.260
+    },
+    {
+      "name": "Hong Kong Adventist Academy",
+      "address": "1111 Clear Water Bay Road, Sai Kung, New Territories, Hong Kong",
+      "lat": 22.330,
+      "lng": 114.270
+    },
+    {
+      "name": "Study@HKILA",
+      "address": "Discovery Bay, Lantau Island, New Territories, Hong Kong",
+      "lat": 22.298,
+      "lng": 114.005
+    },
+    {
+      "name": "Oxbridge School",
+      "address": "G/F & 1/F Star Ruby, 1 San Wai Street, Hung Hom, Kowloon, Hong Kong",
+      "lat": 22.309,
+      "lng": 114.187
+    },
+    {
+      "name": "Forest House Waldorf School",
+      "address": "Commercial Area, Floral Villas, 18 Tso Wo Road, Sai Kung, New Territories, Hong Kong",
+      "lat": 22.336,
+      "lng": 114.270
+    },
+    {
+      "name": "Anchors Academy",
+      "address": "1 Ko Po Path, Kam Tin, Yuen Long, New Territories, Hong Kong",
+      "lat": 22.450,
+      "lng": 114.067
+    },
+    {
+      "name": "HKCA Po Leung Kuk School Hong Kong",
+      "address": "62 Tin Hau Temple Road, North Point, Hong Kong",
+      "lat": 22.282,
+      "lng": 114.191
+    },
+    {
+      "name": "Hong Kong University Graduate Association College",
+      "address": "9 Nam Fung Road, Wong Chuk Hang, Hong Kong",
+      "lat": 22.247,
+      "lng": 114.167
+    },
+    {
+      "name": "Tai Kwong Hilary College",
+      "address": "178 Kam Shan Road, Tai Po, New Territories, Hong Kong",
+      "lat": 22.447,
+      "lng": 114.157
+    },
+    {
+      "name": "YK Pao School Hong Kong",
+      "address": "4 Rose Street, Kowloon Tong, Kowloon, Hong Kong",
+      "lat": 22.335,
+      "lng": 114.180
+    }
+  ]
+  
