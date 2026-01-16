@@ -39,11 +39,26 @@ export default function Home() {
   const [inputValue, setInputValue] = useState("");
   const [inputError, setInputError] = useState<string | null>(null);
   const [hoveredSchool, setHoveredSchool] = useState<School | null>(null);
+  const [searchMode, setSearchMode] = useState<"area" | "school">("area");
+  const [schoolSearchQuery, setSchoolSearchQuery] = useState("");
 
   const acRef = useRef<google.maps.places.Autocomplete | null>(null);
   const mapSectionRef = useRef<HTMLElement | null>(null);
 
-  const nearest10 = useMemo(() => ranked.slice(0, 10), [ranked]);
+  const nearest10 = useMemo(() => ranked.slice(0, 15), [ranked]);
+
+  // Filter schools by search query
+  const filteredSchools = useMemo(() => {
+    if (!schoolSearchQuery.trim()) return [];
+    const query = schoolSearchQuery.toLowerCase().trim();
+    return schools.filter(
+      (s) =>
+        s.name.toLowerCase().includes(query) ||
+        s.chineseName?.toLowerCase().includes(query) ||
+        s.abbreviation?.toLowerCase().includes(query) ||
+        s.address.toLowerCase().includes(query)
+    );
+  }, [schoolSearchQuery, schools]);
 
   // Function to get text color based on school category (matching map marker colors)
   const getSchoolNameColor = (category?: string): string => {
@@ -113,150 +128,376 @@ export default function Home() {
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-4 py-6 lg:grid-cols-[420px_1fr] lg:gap-6 lg:px-6">
         {/* Left panel */}
-        <section className="flex flex-col rounded-2xl border border-achievers-primary/10 bg-white shadow-sm lg:h-[80vh]">
+        <section className="flex flex-col rounded-2xl border border-achievers-primary/10 bg-white shadow-lg lg:h-[80vh] overflow-hidden">
           {/* Fixed header section */}
-          <div className="flex-shrink-0 p-5 pb-4">
-            <div className="text-base font-semibold tracking-tight">iSchool Locator</div>
-            <div className="mt-1 text-sm text-achievers-primary/70">
-              Select your urban area to see nearest schools
+          <div className="flex-shrink-0 p-6 pb-5 border-b border-achievers-primary/5 bg-gradient-to-b from-white to-achievers-primary/2">
+            <div className="flex items-center justify-between mb-2">
+              <div className="text-lg font-bold tracking-tight text-achievers-primary">iSchool Locator</div>
+              <div className="rounded-full border border-achievers-primary/20 bg-achievers-primary/5 px-2.5 py-1 text-xs font-medium text-achievers-primary">
+                HK
+              </div>
+            </div>
+            <div className="text-xs text-achievers-primary/60 leading-relaxed">
+              {searchMode === "area" 
+                ? "Find schools near your location"
+                : "Search for a specific school"}
             </div>
 
-            {/* Autocomplete input */}
-            <div className="mt-4">
-              <div className="text-xs font-medium text-achievers-primary/70 mb-2">
-                Your area (Hong Kong)
-              </div>
-
-              <Autocomplete
-                onLoad={(ac) => {
-                  acRef.current = ac;
-                  ac.setOptions({
-                    componentRestrictions: { country: "hk" },
-                    fields: ["geometry", "name"],
-                    types: ["geocode"],
-                    bounds: HK_BOUNDS as any,
-                    strictBounds: false,
-                  });
+            {/* Mode toggle */}
+            <div className="mt-5 flex gap-1.5 rounded-xl border border-achievers-primary/10 bg-achievers-primary/3 p-1 shadow-inner">
+              <button
+                onClick={() => {
+                  setSearchMode("area");
+                  setSchoolSearchQuery("");
+                  setSelectedSchool(null);
+                  setUserLocation(null);
+                  setRanked([]);
                 }}
-                onPlaceChanged={() => {
-                  const place = acRef.current?.getPlace();
-                  const loc = place?.geometry?.location;
-
-                  if (!loc) {
-                    setInputError("Please select a location from suggestions to confirm.");
-                    return;
-                  }
-
-                  const lat = loc.lat();
-                  const lng = loc.lng();
-
+                className={`flex-1 rounded-lg px-4 py-2.5 text-xs font-semibold transition-all duration-200 ${
+                  searchMode === "area"
+                    ? "bg-white text-achievers-primary shadow-md scale-[1.02]"
+                    : "text-achievers-primary/50 hover:text-achievers-primary/80 hover:bg-white/50"
+                }`}
+              >
+                📍 By Area
+              </button>
+              <button
+                onClick={() => {
+                  setSearchMode("school");
+                  setInputValue("");
                   setInputError(null);
-                  setUserLocation({ lat, lng });
-                  computeNearest(lat, lng);
-
-                  // Optional: clear previous selected school until user clicks one
+                  setUserLocation(null);
+                  setRanked([]);
                   setSelectedSchool(null);
                 }}
+                className={`flex-1 rounded-lg px-4 py-2.5 text-xs font-semibold transition-all duration-200 ${
+                  searchMode === "school"
+                    ? "bg-white text-achievers-primary shadow-md scale-[1.02]"
+                    : "text-achievers-primary/50 hover:text-achievers-primary/80 hover:bg-white/50"
+                }`}
               >
-                <input
-                  value={inputValue}
-                  onChange={(e) => {
-                    setInputValue(e.target.value);
-                    setInputError(null);
-                  }}
-                  placeholder="e.g. North Point / Tin Hau / Tsing Yi"
-                  className="w-full rounded-xl border border-achievers-primary/15 bg-white px-4 py-3 text-sm outline-none placeholder:text-achievers-primary/40 focus:border-achievers-secondary/50"
-                />
-              </Autocomplete>
+                🔍 By School
+              </button>
+            </div>
 
-              {inputError && (
-                <div className="mt-2 text-xs text-red-600">{inputError}</div>
+            {/* Search input based on mode */}
+            <div className="mt-5">
+              {searchMode === "area" ? (
+                <>
+                  <label className="block text-xs font-semibold text-achievers-primary/80 mb-2.5">
+                    Your area (Hong Kong)
+                  </label>
+
+                  <Autocomplete
+                    onLoad={(ac) => {
+                      acRef.current = ac;
+                      ac.setOptions({
+                        componentRestrictions: { country: "hk" },
+                        fields: ["geometry", "name"],
+                        types: ["geocode"],
+                        bounds: HK_BOUNDS as any,
+                        strictBounds: false,
+                      });
+                    }}
+                    onPlaceChanged={() => {
+                      const place = acRef.current?.getPlace();
+                      const loc = place?.geometry?.location;
+
+                      if (!loc) {
+                        setInputError("Please select a location from suggestions to confirm.");
+                        return;
+                      }
+
+                      const lat = loc.lat();
+                      const lng = loc.lng();
+
+                      setInputError(null);
+                      setUserLocation({ lat, lng });
+                      computeNearest(lat, lng);
+
+                      // Optional: clear previous selected school until user clicks one
+                      setSelectedSchool(null);
+                    }}
+                  >
+                    <div className="relative">
+                      <input
+                        value={inputValue}
+                        onChange={(e) => {
+                          setInputValue(e.target.value);
+                          setInputError(null);
+                        }}
+                        placeholder="e.g. North Point, Tin Hau, Tsing Yi..."
+                        className="w-full rounded-xl border-2 border-achievers-primary/15 bg-white px-4 py-3.5 pl-11 text-sm outline-none transition-all placeholder:text-achievers-primary/40 focus:border-achievers-secondary focus:shadow-md focus:shadow-achievers-secondary/10"
+                      />
+                      <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-achievers-primary/40 text-lg">📍</span>
+                    </div>
+                  </Autocomplete>
+
+                  {inputError && (
+                    <div className="mt-2.5 flex items-center gap-1.5 text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
+                      <span>⚠️</span>
+                      <span>{inputError}</span>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <>
+                  <label className="block text-xs font-semibold text-achievers-primary/80 mb-2.5">
+                    School name or abbreviation
+                  </label>
+
+                  <div className="relative">
+                    <input
+                      type="text"
+                      value={schoolSearchQuery}
+                      onChange={(e) => {
+                        setSchoolSearchQuery(e.target.value);
+                        setSelectedSchool(null);
+                      }}
+                      placeholder="e.g. HKIS, Island School, 漢基..."
+                      className="w-full rounded-xl border-2 border-achievers-primary/15 bg-white px-4 py-3.5 pl-11 text-sm outline-none transition-all placeholder:text-achievers-primary/40 focus:border-achievers-secondary focus:shadow-md focus:shadow-achievers-secondary/10"
+                    />
+                    <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-achievers-primary/40 text-lg">🔍</span>
+                    {schoolSearchQuery && (
+                      <button
+                        onClick={() => setSchoolSearchQuery("")}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-achievers-primary/40 hover:text-achievers-primary/70 transition-colors"
+                      >
+                        ✕
+                      </button>
+                    )}
+                  </div>
+                </>
               )}
             </div>
           </div>
 
           {/* Scrollable results section */}
-          <div className="flex-1 overflow-y-auto px-5 pb-5">
-            <div className="flex items-center justify-between">
-              <div className="text-xs font-medium text-achievers-primary/70">
-                Nearest schools
-              </div>
-              <div className="text-xs text-achievers-primary/60">
-                {userLocation ? "Top 10" : "Select an area"}
-              </div>
-            </div>
-
-            <div className="mt-3 space-y-2">
-              {userLocation && nearest10.length === 0 && (
-                <div className="text-sm text-achievers-primary/60">
-                  No results yet.
+          <div className="flex-1 overflow-y-auto px-6 pb-6">
+            {searchMode === "area" ? (
+              <>
+                <div className="sticky top-0 bg-white/95 backdrop-blur-sm z-10 py-4 -mx-6 px-6 border-b border-achievers-primary/5 mb-4">
+                  <div className="flex items-center justify-between">
+                    <div className="text-xs font-semibold text-achievers-primary/80 uppercase tracking-wide">
+                      Nearest schools
+                    </div>
+                    <div className="text-xs font-medium text-achievers-primary/50 bg-achievers-primary/5 px-2.5 py-1 rounded-full">
+                      {userLocation ? "Top 15" : "Select an area"}
+                    </div>
+                  </div>
                 </div>
-              )}
 
-              {nearest10.map((s, idx) => (
-                <button
-                  key={`${s.name}-${s.lat}-${s.lng}`}
-                  onClick={() => {
-                    setSelectedSchool(s);
-                    setHoveredSchool(null); // Clear hover when clicking
-                  }}
-                  onMouseEnter={() => {
-                    setHoveredSchool(s);
-                    // On mobile, scroll map section into view on hover
-                    if (mapSectionRef.current && window.innerWidth < 1024) {
-                      mapSectionRef.current.scrollIntoView({ 
-                        behavior: 'smooth', 
-                        block: 'nearest',
-                        inline: 'nearest'
-                      });
-                    }
-                  }}
-                  onMouseLeave={() => {
-                    // Clear hover when mouse leaves (unless it's the selected school)
-                    if (!selectedSchool || selectedSchool.name !== s.name) {
-                      setHoveredSchool(null);
-                    }
-                  }}
-                  className="w-full text-left rounded-xl border border-achievers-primary/10 bg-white px-4 py-3 transition hover:border-achievers-primary/30 hover:bg-achievers-primary/5"
-                >
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="flex-1">
-                      <div className="text-sm font-medium leading-snug text-achievers-primary">
-                        {idx === 0 ? "Closest — " : ""}
-                        {s.name}
+                <div className="space-y-3">
+                  {!userLocation && (
+                    <div className="text-center py-12 px-4">
+                      <div className="text-4xl mb-3">📍</div>
+                      <div className="text-sm font-medium text-achievers-primary/70 mb-1">
+                        Select your area
                       </div>
-                      {s.chineseName && (
-                        <div className="mt-1 text-xs text-achievers-primary/60">
-                          {s.chineseName}
-                        </div>
-                      )}
-                      {s.category && (
-                        <div className={`mt-1 text-xs font-medium ${getSchoolNameColor(s.category)}`}>
-                          {s.category}
-                        </div>
-                      )}
+                      <div className="text-xs text-achievers-primary/50">
+                        Enter a location above to find nearby schools
+                      </div>
                     </div>
-                    <div className="text-xs text-achievers-primary/70 whitespace-nowrap">
-                      {s.distanceKm.toFixed(1)} km
+                  )}
+
+                  {userLocation && nearest10.length === 0 && (
+                    <div className="text-center py-12 px-4">
+                      <div className="text-4xl mb-3">🔍</div>
+                      <div className="text-sm font-medium text-achievers-primary/70 mb-1">
+                        No results found
+                      </div>
+                      <div className="text-xs text-achievers-primary/50">
+                        Try selecting a different area
+                      </div>
+                    </div>
+                  )}
+
+                  {nearest10.map((s, idx) => {
+                    const isSelected = selectedSchool?.name === s.name;
+                    const isHovered = hoveredSchool?.name === s.name;
+                    return (
+                      <button
+                        key={`${s.name}-${s.lat}-${s.lng}`}
+                        onClick={() => {
+                          setSelectedSchool(s);
+                          setHoveredSchool(null);
+                        }}
+                        onMouseEnter={() => {
+                          setHoveredSchool(s);
+                          if (mapSectionRef.current && window.innerWidth < 1024) {
+                            mapSectionRef.current.scrollIntoView({ 
+                              behavior: 'smooth', 
+                              block: 'nearest',
+                              inline: 'nearest'
+                            });
+                          }
+                        }}
+                        onMouseLeave={() => {
+                          if (!selectedSchool || selectedSchool.name !== s.name) {
+                            setHoveredSchool(null);
+                          }
+                        }}
+                        className={`w-full text-left rounded-xl border-2 transition-all duration-200 px-4 py-3.5 ${
+                          isSelected
+                            ? "border-achievers-secondary bg-achievers-secondary/10 shadow-md"
+                            : isHovered
+                            ? "border-achievers-primary/30 bg-achievers-primary/8 shadow-sm"
+                            : "border-achievers-primary/10 bg-white hover:border-achievers-primary/20 hover:bg-achievers-primary/3"
+                        }`}
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2 mb-1">
+                              {idx === 0 && (
+                                <span className="flex-shrink-0 text-xs font-bold text-achievers-secondary bg-achievers-secondary/10 px-2 py-0.5 rounded-full">
+                                  #1
+                                </span>
+                              )}
+                              <div className={`text-sm font-semibold leading-snug text-achievers-primary truncate ${
+                                isSelected ? "text-achievers-secondary" : ""
+                              }`}>
+                                {s.name}
+                              </div>
+                            </div>
+                            {s.chineseName && (
+                              <div className="mt-1 text-xs text-achievers-primary/60">
+                                {s.chineseName}
+                              </div>
+                            )}
+                            {s.category && (
+                              <div className={`mt-1.5 text-xs font-medium ${getSchoolNameColor(s.category)}`}>
+                                {s.category}
+                              </div>
+                            )}
+                          </div>
+                          <div className="flex-shrink-0 text-xs font-bold text-achievers-primary/70 bg-achievers-primary/5 px-2.5 py-1 rounded-lg whitespace-nowrap">
+                            {s.distanceKm.toFixed(1)} km
+                          </div>
+                        </div>
+                        <div className="mt-2.5 text-xs text-achievers-primary/60 line-clamp-2 leading-relaxed">
+                          {s.address}
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="sticky top-0 bg-white/95 backdrop-blur-sm z-10 py-4 -mx-6 px-6 border-b border-achievers-primary/5 mb-4">
+                  <div className="flex items-center justify-between">
+                    <div className="text-xs font-semibold text-achievers-primary/80 uppercase tracking-wide">
+                      Search results
+                    </div>
+                    <div className="text-xs font-medium text-achievers-primary/50 bg-achievers-primary/5 px-2.5 py-1 rounded-full">
+                      {filteredSchools.length > 0 
+                        ? `${filteredSchools.length} found`
+                        : schoolSearchQuery.trim() 
+                          ? "No results"
+                          : "Start typing"}
                     </div>
                   </div>
-                  <div className="mt-1 text-xs text-achievers-primary/70 line-clamp-2">
-                    {s.address}
-                  </div>
-                </button>
-              ))}
-            </div>
+                </div>
+
+                <div className="space-y-3">
+                  {!schoolSearchQuery.trim() && (
+                    <div className="text-center py-12 px-4">
+                      <div className="text-4xl mb-3">🔍</div>
+                      <div className="text-sm font-medium text-achievers-primary/70 mb-1">
+                        Search for a school
+                      </div>
+                      <div className="text-xs text-achievers-primary/50">
+                        Type a school name, abbreviation, or address above
+                      </div>
+                    </div>
+                  )}
+
+                  {filteredSchools.length === 0 && schoolSearchQuery.trim() && (
+                    <div className="text-center py-12 px-4">
+                      <div className="text-4xl mb-3">😕</div>
+                      <div className="text-sm font-medium text-achievers-primary/70 mb-1">
+                        No schools found
+                      </div>
+                      <div className="text-xs text-achievers-primary/50">
+                        Try a different name or abbreviation
+                      </div>
+                    </div>
+                  )}
+
+                  {filteredSchools.map((s) => {
+                    const isSelected = selectedSchool?.name === s.name;
+                    const isHovered = hoveredSchool?.name === s.name;
+                    return (
+                      <button
+                        key={`${s.name}-${s.lat}-${s.lng}`}
+                        onClick={() => {
+                          setSelectedSchool(s);
+                          setHoveredSchool(null);
+                        }}
+                        onMouseEnter={() => {
+                          setHoveredSchool(s);
+                          if (mapSectionRef.current && window.innerWidth < 1024) {
+                            mapSectionRef.current.scrollIntoView({ 
+                              behavior: 'smooth', 
+                              block: 'nearest',
+                              inline: 'nearest'
+                            });
+                          }
+                        }}
+                        onMouseLeave={() => {
+                          if (!selectedSchool || selectedSchool.name !== s.name) {
+                            setHoveredSchool(null);
+                          }
+                        }}
+                        className={`w-full text-left rounded-xl border-2 transition-all duration-200 px-4 py-3.5 ${
+                          isSelected
+                            ? "border-achievers-secondary bg-achievers-secondary/10 shadow-md"
+                            : isHovered
+                            ? "border-achievers-primary/30 bg-achievers-primary/8 shadow-sm"
+                            : "border-achievers-primary/10 bg-white hover:border-achievers-primary/20 hover:bg-achievers-primary/3"
+                        }`}
+                      >
+                        <div className="flex-1">
+                          <div className={`text-sm font-semibold leading-snug text-achievers-primary mb-1 ${
+                            isSelected ? "text-achievers-secondary" : ""
+                          }`}>
+                            {s.name}
+                          </div>
+                          {s.chineseName && (
+                            <div className="mt-1 text-xs text-achievers-primary/60">
+                              {s.chineseName}
+                            </div>
+                          )}
+                          {s.category && (
+                            <div className={`mt-1.5 text-xs font-medium ${getSchoolNameColor(s.category)}`}>
+                              {s.category}
+                            </div>
+                          )}
+                        </div>
+                        <div className="mt-2.5 text-xs text-achievers-primary/60 line-clamp-2 leading-relaxed">
+                          📍 {s.address}
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </>
+            )}
           </div>
         </section>
 
         {/* Map */}
         <section 
           ref={mapSectionRef}
-          className="relative overflow-hidden rounded-2xl border border-achievers-primary/10 bg-white shadow-sm"
+          className="relative overflow-hidden rounded-2xl border-2 border-achievers-primary/10 bg-white shadow-lg"
         >
-          <div className="absolute inset-x-0 top-0 z-10 h-14 bg-gradient-to-b from-white/80 to-transparent" />
-          <div className="absolute left-4 top-4 z-20 text-xs text-achievers-primary/70">
-            Hong Kong • International Schools
+          <div className="absolute inset-x-0 top-0 z-10 h-16 bg-gradient-to-b from-white via-white/95 to-transparent" />
+          <div className="absolute left-5 top-5 z-20 flex items-center gap-2">
+            <div className="bg-white/90 backdrop-blur-sm border border-achievers-primary/10 rounded-lg px-3 py-1.5 shadow-sm">
+              <div className="text-xs font-semibold text-achievers-primary/80">
+                Hong Kong • International Schools
+              </div>
+            </div>
           </div>
 
           <div className="h-[76vh] lg:h-[80vh]">
@@ -272,75 +513,3 @@ export default function Home() {
     </main>
   );
 }
-
-// import Image from "next/image";
-// import schools from "@/data/schools.json";
-// import { SchoolMap } from "@/components/SchoolMap";
-
-// export default function Home() {
-//   return (
-//     <main className="min-h-screen bg-white text-achievers-primary">
-//       {/* Top brand bar */}
-//       <header className="sticky top-0 z-50 border-b border-achievers-primary/10 bg-achievers-primary">
-//         <div className="mx-auto flex h-20 max-w-7xl items-center justify-start px-4 lg:px-10">
-//           <Image
-//             src="/achievers-logo-white.png"
-//             alt="The Achievers"
-//             width={500}
-//             height={125}
-//             priority
-//             className="ml-4 h-16 w-auto scale-250 brightness-0 invert lg:ml-6"
-//           />
-//         </div>
-//       </header>
-
-//       {/* Content */}
-//       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-4 py-6 lg:grid-cols-[380px_1fr] lg:gap-6 lg:px-6">
-//         {/* Left panel */}
-//         <section className="rounded-2xl border border-achievers-primary/10 bg-white p-5 shadow-sm">
-//           <div className="flex items-start justify-between gap-3">
-//             <div>
-//               <div className="text-base font-semibold tracking-tight">
-//                 iSchool Locator
-//               </div>
-//               <div className="mt-1 text-sm text-achievers-primary/70">
-//                 Showing {(schools as any[]).length} schools on map (MVP Step 1)
-//               </div>
-//             </div>
-//             <div className="rounded-full border border-achievers-primary/20 bg-achievers-primary/5 px-3 py-1 text-xs text-achievers-primary">
-//               HK
-//             </div>
-//           </div>
-
-//           <div className="mt-5 max-h-[65vh] space-y-2 overflow-auto pr-1">
-//             {(schools as any[]).map((s) => (
-//               <div
-//                 key={`${s.name}-${s.lat}-${s.lng}`}
-//                 className="rounded-xl border border-achievers-primary/10 bg-white px-4 py-3 transition hover:border-achievers-primary/30 hover:bg-achievers-primary/5"
-//               >
-//                 <div className="text-sm font-medium leading-snug">{s.name}</div>
-//                 <div className="mt-1 text-xs text-achievers-primary/70">{s.address}</div>
-//               </div>
-//             ))}
-//           </div>
-
-//           <div className="mt-5 rounded-xl border border-achievers-secondary/30 bg-achievers-secondary/10 px-4 py-3 text-xs text-achievers-primary">
-//             Next: add Autocomplete + Top 10 nearest ranking.
-//           </div>
-//         </section>
-
-//         {/* Map */}
-//         <section className="relative overflow-hidden rounded-2xl border border-achievers-primary/10 bg-white shadow-sm">
-//           <div className="absolute inset-x-0 top-0 z-10 h-14 bg-gradient-to-b from-white/80 to-transparent" />
-//           <div className="absolute left-4 top-4 z-20 text-xs text-achievers-primary/70">
-//             Hong Kong • International Schools
-//           </div>
-
-//           <div className="h-[76vh] lg:h-[80vh]">
-//             <SchoolMap schools={schools as any} />
-//           </div>
-//         </section>
-//       </div>
-//     </main>
-//   );
-// }
