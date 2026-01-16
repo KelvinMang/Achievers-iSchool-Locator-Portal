@@ -101,7 +101,7 @@ export default function Home() {
             width={260}
             height={70}
             priority
-            className="ml-4 h-16 w-auto scale-250 brightness-0 invert lg:ml-6"
+            className="ml-4 h-16 w-auto scale-25 brightness-0 invert lg:ml-6"
           />
         </div>
       </header>
