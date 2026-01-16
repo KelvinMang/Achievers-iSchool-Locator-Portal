@@ -26,10 +26,12 @@ export function SchoolMap({
   schools,
   selectedSchool,
   onSelectSchool,
+  hoveredSchool,
 }: {
   schools: School[];
   selectedSchool: School | null;
   onSelectSchool: (s: School | null) => void;
+  hoveredSchool?: School | null;
 }) {
   const mapRef = useRef<google.maps.Map | null>(null);
   const [infoOpen, setInfoOpen] = useState(false);
@@ -65,6 +67,13 @@ export function SchoolMap({
     mapRef.current.setZoom(Math.max(mapRef.current.getZoom() ?? 11, 13));
     setInfoOpen(true);
   }, [selectedSchool]);
+
+  // When user hovers a school, pan to it but don't open InfoWindow
+  useEffect(() => {
+    if (!hoveredSchool || !mapRef.current || selectedSchool) return;
+    mapRef.current.panTo({ lat: hoveredSchool.lat, lng: hoveredSchool.lng });
+    mapRef.current.setZoom(Math.max(mapRef.current.getZoom() ?? 11, 13));
+  }, [hoveredSchool, selectedSchool]);
 
   return (
     <GoogleMap
