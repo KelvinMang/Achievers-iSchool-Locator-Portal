@@ -1,11 +1,13 @@
 import type { NextConfig } from "next";
 
+// For GitHub Pages: use repository name as basePath
+// For user/org pages (serves from root), set this to empty string or remove basePath
+const basePath = process.env.BASE_PATH || "/Achievers-iSchool-Locator-Portal";
+
 const nextConfig: NextConfig = {
   output: "export",
-
-  basePath: "/Achievers-iSchool-Locator-Portal",
-  assetPrefix: "/Achievers-iSchool-Locator-Portal/",
-
+  basePath: basePath,
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
