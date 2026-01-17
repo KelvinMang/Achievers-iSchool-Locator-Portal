@@ -1,3 +1,4 @@
+
 [
   {
     "name": "Carmel School",
@@ -6,7 +7,20 @@
     "lng": 114.163,
     "chineseName": "香港猶太教國際學校",
     "abbreviation": "Carmel",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["IBMYP", "IBDP"],
+      "pathway": "IBMYP-IBDP"
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "French International School of Hong Kong",
@@ -15,7 +29,20 @@
     "lng": 114.192,
     "chineseName": "香港法國國際學校",
     "abbreviation": "FIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "IMYC", "IBDP", "French Bac"],
+      "pathway": "IMYC-IBDP"
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "German Swiss International School",
@@ -24,7 +51,20 @@
     "lng": 114.161,
     "chineseName": "德瑞國際學校",
     "abbreviation": "GSIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "IBDP", "German Abitur"],
+      "pathway": "IGCSE-IBDP"
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Island Children's Montessori International Nursery and Kindergarten",
@@ -33,7 +73,20 @@
     "lng": 114.194,
     "chineseName": "港島兒童蒙特梭利之家",
     "abbreviation": "Montessori",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": null,
+      "rankIndex": null
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": null
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": false,
+      "secondary": false
+    }
   },
   {
     "name": "International Montessori School",
@@ -42,7 +95,20 @@
     "lng": 114.21,
     "chineseName": "蒙特梭利國際學校",
     "abbreviation": "IMS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": "Others"
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Kellett School",
@@ -51,7 +117,20 @@
     "lng": 114.207,
     "chineseName": "啟歷學校",
     "abbreviation": "Kellett",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "A-Level"],
+      "pathway": "IGCSE-A Level"
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "(ESF) Glenealy School",
@@ -60,7 +139,20 @@
     "lng": 114.154,
     "chineseName": "己連拿小學",
     "abbreviation": "Glenealy",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": null,
+      "rankIndex": null
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": null
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "(ESF) Island School",
@@ -69,7 +161,20 @@
     "lng": 114.157,
     "chineseName": "港島中學",
     "abbreviation": "Island",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "IBMYP", "IBDP", "BTEC"],
+      "pathway": "IBMYP-IBDP"
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "(ESF) Peak School",
@@ -78,7 +183,20 @@
     "lng": 114.155,
     "chineseName": "山頂小學",
     "abbreviation": "PS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": null,
+      "rankIndex": null
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": null
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "St. Paul's Co-educational College",
@@ -87,7 +205,20 @@
     "lng": 114.156,
     "chineseName": "聖保羅男女中學 / 附屬小學",
     "abbreviation": "SPCC",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["HKDSE", "IBDP"],
+      "pathway": "HKDSE-IBDP"
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "St. Paul's College",
@@ -96,7 +227,20 @@
     "lng": 114.138,
     "chineseName": "聖保羅書院 / 小學",
     "abbreviation": "SPC",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["HKDSE", "A-Level"],
+      "pathway": "HKDSE-A Level"
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Chinese International School",
@@ -105,7 +249,20 @@
     "lng": 114.198,
     "chineseName": "漢基國際學校",
     "abbreviation": "CIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["IBMYP", "IBDP"],
+      "pathway": "IBMYP-IBDP"
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "DSC International School",
@@ -114,7 +271,20 @@
     "lng": 114.22,
     "chineseName": "德思齊加拿大國際學校",
     "abbreviation": "DSC",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": ["HKDSE", "IBDP"],
+      "pathway": "HKDSE-IBDP"
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Kiangsu and Chekiang Primary School",
@@ -132,7 +302,20 @@
     "lng": 114.199,
     "chineseName": "蘇浙公學國際部",
     "abbreviation": "KCCIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["HKDSE", "IBDP"],
+      "pathway": "HKDSE-IBDP"
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Korean International School",
@@ -141,7 +324,20 @@
     "lng": 114.221,
     "chineseName": "香港韓國國際學校",
     "abbreviation": "KIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "A-Level"],
+      "pathway": "HKDSE-IBDP"
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "(ESF) Quarry Bay School",
@@ -168,7 +364,20 @@
     "lng": 114.015,
     "chineseName": "(英基學校) 智新書院",
     "abbreviation": "Discovery",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "IBMYP", "IBDP", "BTEC"],
+      "pathway": "IBMYP-IBDP"
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Lantau International School",
@@ -177,7 +386,20 @@
     "lng": 113.932,
     "chineseName": "大嶼山國際學校",
     "abbreviation": "LIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "YMCA of Hong Kong Christian College",
@@ -186,7 +408,27 @@
     "lng": 113.94,
     "chineseName": "港青基信書院",
     "abbreviation": "YHKCC",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "IGCSE",
+        "A-Level",
+        "HKDSE"
+      ],
+      "pathway": [
+        "HKDSE-A Level",
+        "Others"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "American International School",
@@ -195,7 +437,24 @@
     "lng": 114.18,
     "chineseName": "美國國際學校",
     "abbreviation": "AIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)", 
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [
+        "AP"
+      ],
+      "pathway": [
+        "AP-SAT"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Australian International School Hong Kong",
@@ -204,7 +463,20 @@
     "lng": 114.175,
     "chineseName": "香港澳洲國際學校",
     "abbreviation": "AISHK",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["IBDP"],
+      "pathway": "Others"
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "(ESF) Beacon Hill School",
@@ -213,7 +485,20 @@
     "lng": 114.173,
     "chineseName": "畢架山小學",
     "abbreviation": "BHS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)", 
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Christian Alliance P.C. Lau Memorial International School",
@@ -222,7 +507,20 @@
     "lng": 114.188,
     "chineseName": "宣道會劉平齋紀念國際學校",
     "abbreviation": "CAPCL",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)", 
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "(ESF) Jockey Club Sarah Roe School",
@@ -231,7 +529,24 @@
     "lng": 114.182,
     "chineseName": "(英基學校) 賽馬會善樂學校",
     "abbreviation": "JCSRS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)", 
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [
+        "Others"
+      ],
+      "pathway": [
+        "Others"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "(ESF) King George V School",
@@ -240,7 +555,27 @@
     "lng": 114.181,
     "chineseName": "(英基學校) 英皇佐治五世學校",
     "abbreviation": "KGV",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)", 
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "IGCSE",
+        "IBDP",
+        "Others"
+      ],
+      "pathway": [
+        "IGCSE-IBDP"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
+
   },
   {
     "name": "Kingston International School",
@@ -249,7 +584,20 @@
     "lng": 114.179,
     "chineseName": "京斯敦國際學校",
     "abbreviation": "Kingston",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)", 
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "(ESF) Kowloon Junior School",
@@ -258,7 +606,20 @@
     "lng": 114.176,
     "chineseName": "(英基學校) 九龍小學",
     "abbreviation": "KJS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)", 
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Po Leung Kuk Ngan Po Ling College",
@@ -267,7 +628,25 @@
     "lng": 114.19,
     "chineseName": "保良局顏寶鈴書院",
     "abbreviation": "NPL",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)", 
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "HKDSE",
+        "IBDP"
+      ],
+      "pathway": [
+        "HKDSE-IBDP"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Stamford American School Hong Kong",
@@ -276,7 +655,20 @@
     "lng": 114.178,
     "chineseName": "香港斯坦福美國學校",
     "abbreviation": "SAIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["American high school diploma", "IBDP"],
+      "pathway": "American-IBDP"
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Yew Chung International School",
@@ -285,7 +677,20 @@
     "lng": 114.178,
     "chineseName": "耀中國際學校",
     "abbreviation": "YCIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "IBDP"],
+      "pathway": "Others"
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Nord Anglia International School Hong Kong",
@@ -294,7 +699,25 @@
     "lng": 114.236,
     "chineseName": "香港諾德安達國際學校",
     "abbreviation": "NAIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "IGCSE",
+        "IBDP"
+      ],
+      "pathway": [
+        "IGCSE-IBDP"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "United Christian College (Kowloon East)",
@@ -303,7 +726,27 @@
     "lng": 114.224,
     "chineseName": "滙基書院（東九龍）",
     "abbreviation": "UCCKE",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)", 
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "HKDSE",
+        "IGCSE",
+        "A-Level"
+      ],
+      "pathway": [
+        "IGCSE-A Level",
+        "Others"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "International College Hong Kong",
@@ -312,7 +755,20 @@
     "lng": 114.21,
     "chineseName": "香港國際學院\n大埔康樂園(幼稚園及小學)\n沙頭角(中學)",
     "abbreviation": "ICHK",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "(ESF) Clearwater Bay School",
@@ -321,7 +777,20 @@
     "lng": 114.27,
     "chineseName": "(英基學校) 清水灣小學",
     "abbreviation": "CWBS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Creative Secondary School",
@@ -330,7 +799,25 @@
     "lng": 114.26,
     "chineseName": "啓思中學",
     "abbreviation": "CSS",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "HKDSE",
+        "IBDP"
+      ],
+      "pathway": [
+        "HKDSE-IBDP"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "G.T. (Ellen Yeung) College",
@@ -339,7 +826,25 @@
     "lng": 114.268,
     "chineseName": "優才（楊殷有娣）書院",
     "abbreviation": "GT",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [
+        "DSE",
+        "IBDP"
+      ],
+      "pathway": [
+        "DSE-IBDP"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Hong Kong Academy",
@@ -348,7 +853,25 @@
     "lng": 114.275,
     "chineseName": "香港學堂國際學校",
     "abbreviation": "HKA",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "IBMYP",
+        "IBDP"
+      ],
+      "pathway": [
+        "Others"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Hong Kong Chinese Christian Churches Union Logos Academy",
@@ -357,7 +880,25 @@
     "lng": 114.25,
     "chineseName": "香港華人基督教聯會真道書院",
     "abbreviation": "HKCCCULA",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "HKDSE",
+        "HKIBDP"
+      ],
+      "pathway": [
+        "DSE-IBDP"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Shrewsbury International School Hong Kong",
@@ -366,7 +907,20 @@
     "lng": 114.274,
     "chineseName": "思貝禮國際學校",
     "abbreviation": "Shrewsbury",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Hong Kong Baptist University Affiliated School Wong Kam Fai Secondary and Primary School",
@@ -375,7 +929,26 @@
     "lng": 114.21,
     "chineseName": "香港浸會大學附屬學校王錦輝中小學",
     "abbreviation": "HKBUAS",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "IGCSE",
+        "A-Level",
+        "DSE"
+      ],
+      "pathway": [
+        "IGCSE-A Level"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "International Christian School",
@@ -384,7 +957,25 @@
     "lng": 114.211,
     "chineseName": "基督教國際學校",
     "abbreviation": "ICS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "AP",
+        "SAT"
+      ],
+      "pathway": [
+        "AP-SAT"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Li Po Chun United World College",
@@ -393,7 +984,20 @@
     "lng": 114.248,
     "chineseName": "香港李寶椿聯合世界書院",
     "abbreviation": "LPCUWC",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "curriculum": {
+      "secondary": [
+        "IBDP"
+      ],
+      "pathway": [
+        "Others"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Pui Kiu College",
@@ -402,7 +1006,24 @@
     "lng": 114.182,
     "chineseName": "培僑中學",
     "abbreviation": "PKC",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "HKDSE"
+      ],
+      "pathway": [
+        "Others"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "(ESF) Renaissance College",
@@ -411,7 +1032,25 @@
     "lng": 114.225,
     "chineseName": "(英基學校) 啓新書院",
     "abbreviation": "RCHK",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [
+        "IBMYP",
+        "IBDP"
+      ],
+      "pathway": [
+        "Others"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "(ESF) Shatin College",
@@ -420,7 +1059,26 @@
     "lng": 114.188,
     "chineseName": "(英基學校) 沙田學院",
     "abbreviation": "STC",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [
+        "IGCSE",
+        "IBMYP",
+        "IBDP"
+      ],
+      "pathway": [
+        "IGCSE-IBDP"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "(ESF) Sha Tin Junior School",
@@ -429,7 +1087,20 @@
     "lng": 114.189,
     "chineseName": "(英基學校) 沙田小學",
     "abbreviation": "SJS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Stewards Pooi Kei College",
@@ -447,7 +1118,26 @@
     "lng": 114.148,
     "chineseName": "宣道國際學校",
     "abbreviation": "CAIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "AP",
+        "IBDP",
+        "Others"
+      ],
+      "pathway": [
+        "AP-SAT"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Concordia International School",
@@ -456,7 +1146,24 @@
     "lng": 114.174,
     "chineseName": "上海協和國際外籍人員子女學校",
     "abbreviation": "Concordia",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [
+        "AP"
+      ],
+      "pathway": [
+        "AP-SAT"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Delia Memorial School (Glee Path)",
@@ -465,7 +1172,25 @@
     "lng": 114.14,
     "chineseName": "地利亞修女紀念學校（吉利徑）",
     "abbreviation": "DMSGP",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "HKDSE",
+        "IBDP"
+      ],
+      "pathway": [
+        "HKDSE-IBDP"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Po Leung Kuk Choi Kai Yau School",
@@ -474,7 +1199,25 @@
     "lng": 114.159,
     "chineseName": "保良局蔡繼有學校",
     "abbreviation": "CKY",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [
+        "IGCSE",
+        "IBDP"
+      ],
+      "pathway": [
+        "IGCSE-IBDP"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Tsung Tsin Christian Academy",
@@ -483,7 +1226,25 @@
     "lng": 114.166,
     "chineseName": "基督教崇真中學",
     "abbreviation": "TTCA",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [
+        "HKDSE",
+        "A-Level"
+      ],
+      "pathway": [
+        "Others"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Canadian International School",
@@ -492,7 +1253,20 @@
     "lng": 114.168,
     "chineseName": "加拿大國際學校",
     "abbreviation": "CDNIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["IBMYP", "IBDP"],
+      "pathway": "IBMYP-IBDP"
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Hong Kong International School",
@@ -501,7 +1275,20 @@
     "lng": 114.215,
     "chineseName": "香港國際學校",
     "abbreviation": "HKIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["AP"],
+      "pathway": "AP-SAT"
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Independent Schools Foundation Academy",
@@ -510,7 +1297,20 @@
     "lng": 114.13,
     "chineseName": "弘立書院",
     "abbreviation": "ISF",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["IBMYP", "IBDP"],
+      "pathway": "IBMYP-IBDP"
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "(ESF) Kennedy School",
@@ -519,7 +1319,20 @@
     "lng": 114.13,
     "chineseName": " (英基學校) 堅尼地小學",
     "abbreviation": "Kennedy",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Singapore International School",
@@ -528,7 +1341,25 @@
     "lng": 114.171,
     "chineseName": "新加坡國際學校",
     "abbreviation": "SISHK",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [
+        "IGCSE",
+        "IBDP"
+      ],
+      "pathway": [
+        "Others"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "(ESF) South Island School",
@@ -537,7 +1368,26 @@
     "lng": 114.175,
     "chineseName": "英基南島中學",
     "abbreviation": "SIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [
+        "IGCSE",
+        "IBMYP",
+        "IBDP"
+      ],
+      "pathway": [
+        "IGCSE-IBDP"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "St Stephen's College",
@@ -546,7 +1396,25 @@
     "lng": 114.212,
     "chineseName": "聖士提反書院",
     "abbreviation": "SSC",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": [
+        "HKDSE",
+        "IBDP"
+      ],
+      "pathway": [
+        "HKDSE-IBDP"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "The Harbour School",
@@ -555,7 +1423,24 @@
     "lng": 114.185,
     "chineseName": "港灣學校",
     "abbreviation": "THS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [
+        "AP"
+      ],
+      "pathway": [
+        "AP-SAT"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Victoria Shanghai Academy",
@@ -564,7 +1449,20 @@
     "lng": 114.162,
     "chineseName": "滬江維多利亞學校",
     "abbreviation": "VSA",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["IBMYP", "IBDP"],
+      "pathway": "IBMYP-IBDP"
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "(ESF) West Island School",
@@ -573,7 +1471,26 @@
     "lng": 114.128,
     "chineseName": " (英基學校) 西島中學",
     "abbreviation": "WIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [
+        "IGCSE",
+        "IBMYP",
+        "IBDP"
+      ],
+      "pathway": [
+        "IGCSE-IBDP"
+      ]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "American School Hong Kong",
@@ -582,7 +1499,24 @@
     "lng": 114.175,
     "chineseName": "香港美國學校",
     "abbreviation": "ASHK",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [
+        "IBDP"
+      ],
+      "pathway": [
+        "Others"
+      ]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "International College Hong Kong Hong Lok Yuen",
@@ -591,7 +1525,20 @@
     "lng": 114.154,
     "chineseName": "康樂園國際學校",
     "abbreviation": "ICHK HLY",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Japanese International School",
@@ -600,7 +1547,20 @@
     "lng": 114.187,
     "chineseName": "香港日本人學校",
     "abbreviation": "JIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Malvern College Hong Kong",
@@ -609,7 +1569,20 @@
     "lng": 114.214,
     "chineseName": "香港墨爾文國際學校",
     "abbreviation": "MCHK",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": ["IBMYP", "IBDP"],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Norwegian International School",
@@ -618,7 +1591,20 @@
     "lng": 114.169,
     "chineseName": "挪威國際學校",
     "abbreviation": "NIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Sear Rogers International School",
@@ -627,7 +1613,20 @@
     "lng": 114.167,
     "chineseName": "弘爵國際學校",
     "abbreviation": "SRIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["IGCSE}", "A-Level"],
+      "pathway": ["IGCSE-A Level"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Harrow International School Hong Kong",
@@ -636,7 +1635,20 @@
     "lng": 113.984,
     "chineseName": "哈羅香港國際學校",
     "abbreviation": "HISHK",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "A-Level"],
+      "pathway": ["IGCSE-A Level"]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "(ESF) Bradbury School",
@@ -645,7 +1657,20 @@
     "lng": 114.181,
     "chineseName": " (英基學校) 白普理小學",
     "abbreviation": "Bradbury",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Dalton School Hong Kong",
@@ -654,7 +1679,20 @@
     "lng": 114.165,
     "chineseName": "香港道爾頓學校",
     "abbreviation": "DSHK",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Hong Kong Japanese School",
@@ -663,7 +1701,20 @@
     "lng": 114.199,
     "chineseName": "香港日本人學校",
     "abbreviation": "HKJS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": ["Others"],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "St. Paul's Convent School",
@@ -672,7 +1723,20 @@
     "lng": 114.186,
     "chineseName": "聖保祿學校",
     "abbreviation": "SPCS",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["HKDSE"],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "International Christian Quality Music Secondary and Primary School",
@@ -681,7 +1745,20 @@
     "lng": 114.206,
     "chineseName": "國際基督教優質音樂中學暨小學",
     "abbreviation": "ICQM",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["HKDSE"],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Diocesan Boys' School",
@@ -690,7 +1767,20 @@
     "lng": 114.174,
     "chineseName": "拔萃男書院",
     "abbreviation": "DBS",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["HKDSE", "IBDP"],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Diocesan Girls' School",
@@ -699,7 +1789,20 @@
     "lng": 114.171,
     "chineseName": "拔萃女書院",
     "abbreviation": "DGS",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["HKDSE", "A-Level"],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "ELCHK Lutheran Academy",
@@ -708,7 +1811,20 @@
     "lng": 114.021,
     "chineseName": "基督教香港信義會宏信書院",
     "abbreviation": "LUAC",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": ["HKDSE", "IBMYP", "IBDP"],
+      "pathway": ["HKDSE-IBDP"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "HKFYG Lee Shau Kee College",
@@ -717,7 +1833,20 @@
     "lng": 114.004,
     "chineseName": "香港青年協會李兆基書院",
     "abbreviation": "HLC",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["HKDSE", "A-Level"],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Wycombe Abbey School Hong Kong",
@@ -726,7 +1855,20 @@
     "lng": 114.148,
     "chineseName": "香港威雅學校",
     "abbreviation": "WAS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "A-Level"],
+      "pathway": ["IGCSE-A Level"]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Island Waldorf School",
@@ -735,7 +1877,20 @@
     "lng": 114.135,
     "chineseName": "香島華德福學校",
     "abbreviation": "IWS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "San Wui Commercial Society YMCA of Hong Kong Christian School",
@@ -744,7 +1899,20 @@
     "lng": 114.159,
     "chineseName": "新會商會港青基信學校",
     "abbreviation": "SWCS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Spanish School of Hong Kong",
@@ -753,7 +1921,20 @@
     "lng": 114.168,
     "chineseName": "香港西班牙學校",
     "abbreviation": "",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["IGCSE"],
+      "pathway": ["IGCSE-A Level"]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "California School",
@@ -762,7 +1943,20 @@
     "lng": 114.171,
     "chineseName": "",
     "abbreviation": "",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "A-Level"],
+      "pathway": ["IGCSE-A Level"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Creative Primary School",
@@ -771,7 +1965,20 @@
     "lng": 114.177,
     "chineseName": "啓思小學",
     "abbreviation": "",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Han Academy",
@@ -780,7 +1987,20 @@
     "lng": 114.168,
     "chineseName": "漢鼎書院",
     "abbreviation": "Han",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Transition",
+      "rankIndex": 4
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "A-Level"],
+      "pathway": "IGCSE-A Level"
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Bloom KKCA Academy",
@@ -789,7 +2009,20 @@
     "lng": 114.168,
     "chineseName": "百卉九江書院",
     "abbreviation": "KKCA",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Transition",
+      "rankIndex": 4
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "YMCA Christian Academy",
@@ -798,7 +2031,20 @@
     "lng": 114.15,
     "chineseName": "中華基督教青年會基雋小學",
     "abbreviation": "",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Anfield School",
@@ -807,7 +2053,20 @@
     "lng": 114.183,
     "chineseName": "安菲爾學校",
     "abbreviation": "",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Garden House Waldorf School",
@@ -816,7 +2075,20 @@
     "lng": 114.27,
     "chineseName": "花園華德福學校",
     "abbreviation": "",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Invictus School Hong Kong",
@@ -825,7 +2097,20 @@
     "lng": 114.26,
     "chineseName": "茵維特香港學校",
     "abbreviation": "Invictus",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "A Level"],
+      "pathway": ["IGCSE-A Level"]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Hong Kong Adventist Academy",
@@ -834,7 +2119,20 @@
     "lng": 114.27,
     "chineseName": "香港復臨學校",
     "abbreviation": "",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Transition",
+      "rankIndex": 4
+    },
+    "curriculum": {
+      "secondary": ["Others"],
+      "pathway": ["AP-SAT"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Study@HKILA",
@@ -843,7 +2141,20 @@
     "lng": 114.005,
     "chineseName": "",
     "abbreviation": "",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Oxbridge School",
@@ -852,7 +2163,20 @@
     "lng": 114.187,
     "chineseName": "劍津英國學校",
     "abbreviation": "",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "A Level"],
+      "pathway": ["IGCSE-A Level"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "Forest House Waldorf School",
@@ -861,7 +2185,20 @@
     "lng": 114.27,
     "chineseName": "樹宏學校",
     "abbreviation": "",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Anchors Academy",
@@ -870,7 +2207,20 @@
     "lng": 114.067,
     "chineseName": "安基司學校",
     "abbreviation": "",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "HKCA Po Leung Kuk School Hong Kong",
@@ -879,7 +2229,20 @@
     "lng": 114.191,
     "chineseName": "保良局建造商會學校",
     "abbreviation": "",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": ["Others"]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Hong Kong University Graduate Association College",
@@ -888,7 +2251,21 @@
     "lng": 114.167,
     "chineseName": "港大同學會書院",
     "abbreviation": "HKUGA College",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+        "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": ["HKDSE", "A-Level"],
+      "pathway": "HKDSE-A Level"
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
+
   },
   {
     "name": "Tai Kwong Hilary College",
@@ -897,7 +2274,20 @@
     "lng": 114.157,
     "chineseName": "大光德萃書院",
     "abbreviation": "TKHC",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["IGCSE", "A Level", "IBDP"],
+      "pathway": ["IGCSE-IBDP", "IGCSE-A Level"]
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   },
   {
     "name": "YK Pao School Hong Kong",
@@ -906,6 +2296,19 @@
     "lng": 114.18,
     "chineseName": "香港包玉剛學校",
     "abbreviation": "YK PAO",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": ["IBMYP", "IBDP"],
+      "pathway": "IBMYP-IBDP"
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": true,
+      "secondary": true
+    }
   }
 ]
