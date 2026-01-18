@@ -4,6 +4,9 @@ import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { Autocomplete, useJsApiLoader } from "@react-google-maps/api";
+import { Suspense } from "react";
+import HomeWithQuery from "@/components/HomeWithQuery";
+
 
 import schoolsRaw from "@/data/schools.json";
 import { haversineKm } from "@/lib/distance";
@@ -168,6 +171,17 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white text-achievers-primary">
+      <Suspense fallback={null}>
+      <HomeWithQuery
+        schools={schools}
+        onSelectSchool={(s) => {
+          setSelectedSchool(s);
+          setHoveredSchool(null);
+          setSearchMode("school");
+          setSchoolSearchQuery(s.name);
+        }}
+      />
+    </Suspense>
       {/* Top brand bar */}
       <header className="sticky top-0 z-50 border-b border-achievers-primary/10 bg-achievers-primary">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 lg:px-6">
