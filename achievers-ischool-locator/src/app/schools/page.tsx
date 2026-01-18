@@ -7,12 +7,15 @@ import { useMemo, useState } from "react";
 import schoolsRaw from "@/data/schools.json";
 import type { School } from "@/components/SchoolMap";
 
-const schoolHref = (name: string) => `${BASE_PATH}/?school=${encodeURIComponent(name)}`;
+const schoolHref = (name: string) => ({
+    pathname: "/",
+    query: { school: name },
+  });
 
-const BASE_PATH =
-  process.env.NODE_ENV === "production"
-    ? "/Achievers-iSchool-Locator-Portal"
-    : "";
+// const BASE_PATH =
+//   process.env.NODE_ENV === "production"
+//     ? "/Achievers-iSchool-Locator-Portal"
+//     : "";
 
 
 const getSchoolNameColor = (category?: string): string => {
@@ -149,7 +152,7 @@ export default function SchoolsDirectoryPage() {
       <header className="sticky top-0 z-50 border-b border-achievers-primary/10 bg-achievers-primary">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 lg:px-6">
           <Image
-            src={`${BASE_PATH}/achievers-logo-white.png`}
+            src="/achievers-logo-white.png"
             alt="The Achievers"
             width={260}
             height={70}
@@ -160,7 +163,7 @@ export default function SchoolsDirectoryPage() {
           <nav className="flex items-center gap-3">
             {/* Locator (secondary) */}
             <Link
-              href={`${BASE_PATH}/`}
+              href="/"
               className="rounded-full bg-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/25 transition shadow-sm"
             >
               Locator
@@ -168,7 +171,7 @@ export default function SchoolsDirectoryPage() {
 
             {/* All Schools (active) */}
             <Link
-              href={`${BASE_PATH}/schools/`}
+              href= "/schools"
               className="rounded-full bg-white px-6 py-3 text-sm font-bold text-achievers-primary hover:bg-white/90 transition shadow-md"
             >
               All Schools
