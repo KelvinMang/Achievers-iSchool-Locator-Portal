@@ -6,12 +6,12 @@ import Link from "next/link";
 import { Autocomplete, useJsApiLoader } from "@react-google-maps/api";
 import { Suspense } from "react";
 import HomeWithQuery from "@/components/HomeWithQuery";
+import HomeClient from "@/components/HomeClient";
 
 
 import schoolsRaw from "@/data/schools.json";
 import { haversineKm } from "@/lib/distance";
 import { SchoolMap, School } from "@/components/SchoolMap";
-import { useSearchParams } from "next/navigation";
 
 type RankedSchool = School & { distanceKm: number };
 
@@ -30,9 +30,6 @@ const BASE_PATH =
 export default function Home() {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY;
 
-  const searchParams = useSearchParams();
-  const schoolParam = searchParams.get("school");
-
   const schools = schoolsRaw as School[];
 
   const { isLoaded, loadError } = useJsApiLoader({
@@ -50,26 +47,7 @@ export default function Home() {
   const [searchMode, setSearchMode] = useState<"area" | "school">("area");
   const [schoolSearchQuery, setSchoolSearchQuery] = useState("");
 
-  useEffect(() => {
-    if (!isLoaded) return;
-    if (!schoolParam) return;
-  
-    const decoded = decodeURIComponent(schoolParam);
-  
-    // match by name (exact), with a safe fallback to case-insensitive
-    const found =
-      schools.find((s) => s.name === decoded) ||
-      schools.find((s) => s.name.toLowerCase() === decoded.toLowerCase());
-  
-    if (!found) return;
-  
-    setSelectedSchool(found);
-    setHoveredSchool(null);
-  
-    // optional: switch to school mode so UI feels consistent
-    setSearchMode("school");
-    setSchoolSearchQuery(found.name);
-  }, [isLoaded, schoolParam, schools]);
+
 
   const acRef = useRef<google.maps.places.Autocomplete | null>(null);
   const mapSectionRef = useRef<HTMLElement | null>(null);
@@ -171,10 +149,10 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white text-achievers-primary">
-      <Suspense fallback={null}>
-      <HomeWithQuery
+    <Suspense fallback={null}>
+      <HomeClient
         schools={schools}
-        onSelectSchool={(s) => {
+        onPickSchool={(s) => {
           setSelectedSchool(s);
           setHoveredSchool(null);
           setSearchMode("school");
@@ -195,7 +173,7 @@ export default function Home() {
           />
 
           <Link
-            href="/schools"
+            href={`${BASE_PATH}/schools`}
             className="rounded-full bg-white/20 px-6 py-3 text-sm font-semibold text-white hover:bg-white/30 transition shadow-sm"
           >
             All Schools
