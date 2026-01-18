@@ -24,7 +24,7 @@ const HK_BOUNDS = {
 
 const BASE_PATH =
   process.env.NODE_ENV === "production"
-    ? "/Achievers-iSchool-Locator-Portal"
+    ? "/Achievers-iSchool-Locator-Portal/achievers-ischool-locator"
     : "";
 
 export default function Home() {
