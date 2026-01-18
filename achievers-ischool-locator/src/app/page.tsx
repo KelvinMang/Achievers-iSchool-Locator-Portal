@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import { Autocomplete, useJsApiLoader } from "@react-google-maps/api";
 
 import schoolsRaw from "@/data/schools.json";
 import { haversineKm } from "@/lib/distance";
 import { SchoolMap, School } from "@/components/SchoolMap";
+import { useSearchParams } from "next/navigation";
 
 type RankedSchool = School & { distanceKm: number };
 
@@ -25,6 +27,9 @@ const BASE_PATH =
 export default function Home() {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY;
 
+  const searchParams = useSearchParams();
+  const schoolParam = searchParams.get("school");
+
   const schools = schoolsRaw as School[];
 
   const { isLoaded, loadError } = useJsApiLoader({
@@ -41,6 +46,27 @@ export default function Home() {
   const [hoveredSchool, setHoveredSchool] = useState<School | null>(null);
   const [searchMode, setSearchMode] = useState<"area" | "school">("area");
   const [schoolSearchQuery, setSchoolSearchQuery] = useState("");
+
+  useEffect(() => {
+    if (!isLoaded) return;
+    if (!schoolParam) return;
+  
+    const decoded = decodeURIComponent(schoolParam);
+  
+    // match by name (exact), with a safe fallback to case-insensitive
+    const found =
+      schools.find((s) => s.name === decoded) ||
+      schools.find((s) => s.name.toLowerCase() === decoded.toLowerCase());
+  
+    if (!found) return;
+  
+    setSelectedSchool(found);
+    setHoveredSchool(null);
+  
+    // optional: switch to school mode so UI feels consistent
+    setSearchMode("school");
+    setSchoolSearchQuery(found.name);
+  }, [isLoaded, schoolParam, schools]);
 
   const acRef = useRef<google.maps.places.Autocomplete | null>(null);
   const mapSectionRef = useRef<HTMLElement | null>(null);
@@ -71,6 +97,36 @@ export default function Home() {
     }
     return "text-achievers-primary"; // Default color
   };
+
+  const normalizeArray = (v: string | string[] | null | undefined): string[] => {
+    if (!v) return [];
+    return Array.isArray(v) ? v : [v];
+  };
+  
+  const stageBadges = (s: School) => {
+    const chips = [
+      { k: "K", on: !!s.stages?.kindergarten },
+      { k: "P", on: !!s.stages?.primary },
+      { k: "S", on: !!s.stages?.secondary },
+    ];
+    return chips;
+  };
+  
+  const tierLabel = (s: School): string | null => {
+    const rank = s.tier?.rankIndex;
+    const name = s.tier?.secondary;
+  
+    if (rank == null || !name) return null;
+  
+    return `Tier ${rank} (${name})`;
+  };
+    
+  const curriculumLabel = (s: School): string | null => {
+    if (s.curriculum?.secondary?.length) {
+      return `Curriculum: ${s.curriculum.secondary.join(", ")}`;
+    }
+    return null;
+  }; 
 
   // Scroll map into view when a school is selected
   useEffect(() => {
@@ -114,7 +170,7 @@ export default function Home() {
     <main className="min-h-screen bg-white text-achievers-primary">
       {/* Top brand bar */}
       <header className="sticky top-0 z-50 border-b border-achievers-primary/10 bg-achievers-primary">
-        <div className="mx-auto flex h-20 max-w-7xl items-center justify-left px-4 lg:px-6">
+        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 lg:px-6">
           <Image
             src={`${BASE_PATH}/achievers-logo-white.png`}
             alt="The Achievers"
@@ -123,8 +179,15 @@ export default function Home() {
             priority
             className="ml-4 h-16 w-auto scale-250 brightness-0 invert lg:ml-6"
           />
+
+          <Link
+            href="/schools"
+            className="rounded-full bg-white/20 px-6 py-3 text-sm font-semibold text-white hover:bg-white/30 transition shadow-sm"
+          >
+            All Schools
+          </Link>
         </div>
-      </header>
+    </header>
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-4 py-6 lg:grid-cols-[420px_1fr] lg:gap-6 lg:px-6">
         {/* Left panel */}
@@ -134,7 +197,7 @@ export default function Home() {
             <div className="flex items-center justify-between mb-2">
               <div className="text-lg font-bold tracking-tight text-achievers-primary">iSchool Locator</div>
               <div className="rounded-full border border-achievers-primary/20 bg-achievers-primary/5 px-2.5 py-1 text-xs font-medium text-achievers-primary">
-                HK
+                Hong Kong
               </div>
             </div>
             <div className="text-xs text-achievers-primary/60 leading-relaxed">
@@ -348,9 +411,9 @@ export default function Home() {
                         <div className="flex items-start justify-between gap-3">
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center gap-2 mb-1">
-                              {idx === 0 && (
+                              {(
                                 <span className="flex-shrink-0 text-xs font-bold text-achievers-secondary bg-achievers-secondary/10 px-2 py-0.5 rounded-full">
-                                  #1
+                                  #{idx+1}
                                 </span>
                               )}
                               <div className={`text-sm font-semibold leading-snug text-achievers-primary truncate ${
@@ -367,6 +430,35 @@ export default function Home() {
                             {s.category && (
                               <div className={`mt-1.5 text-xs font-medium ${getSchoolNameColor(s.category)}`}>
                                 {s.category}
+                              </div>
+                            )}
+                            {/* Tier / Stages / Curriculum */}
+                            <div className="mt-2 flex flex-wrap items-center gap-2">
+                              {tierLabel(s) && (
+                                <span className="text-[12px] font-semibold text-achievers-primary bg-achievers-primary/5 border border-achievers-primary/15 px-2 py-0.5 rounded-full">
+                                  {tierLabel(s)}
+                                </span>
+                              )}
+
+                              <div className="flex items-center gap-1.5">
+                                {stageBadges(s).map((c) => (
+                                  <span
+                                    key={c.k}
+                                    className={`text-[12px] font-extrabold px-3 py-1 rounded-full tracking-wider ${
+                                      c.on
+                                        ? "bg-achievers-primary text-white shadow-sm"
+                                        : "bg-achievers-primary/10 text-achievers-primary/40"
+                                    }`}
+                                  >
+                                    {c.k}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+
+                            {curriculumLabel(s) && (
+                              <div className="mt-2 text-[12px] font-extrabold text-achievers-primary/60 leading-snug">
+                                {curriculumLabel(s)}
                               </div>
                             )}
                           </div>
@@ -471,6 +563,11 @@ export default function Home() {
                           {s.category && (
                             <div className={`mt-1.5 text-xs font-medium ${getSchoolNameColor(s.category)}`}>
                               {s.category}
+                            </div>
+                          )}
+                          {curriculumLabel(s) && (
+                            <div className="mt-2 text-[11px] text-achievers-primary/60 leading-snug">
+                              {curriculumLabel(s)}
                             </div>
                           )}
                         </div>

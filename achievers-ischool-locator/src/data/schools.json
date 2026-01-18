@@ -293,7 +293,20 @@
     "lng": 114.199,
     "chineseName": "蘇浙小學校",
     "abbreviation": "KCPS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": null,
+      "pathway": null
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Kiangsu-Chekiang College, International Section",
@@ -304,7 +317,7 @@
     "abbreviation": "KCCIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
+      "secondary": "Accessible",
       "rankIndex": 3
     },
     "curriculum": {
@@ -1729,7 +1742,7 @@
       "rankIndex": 1
     },
     "curriculum": {
-      "secondary": ["HKDSE"],
+      "secondary": ["HKDSE", "A-Level"],
       "pathway": ["Others"]
     },
     "stages": {
@@ -2103,7 +2116,7 @@
       "rankIndex": 3
     },
     "curriculum": {
-      "secondary": ["IGCSE", "A Level"],
+      "secondary": ["IGCSE", "A-Level"],
       "pathway": ["IGCSE-A Level"]
     },
     "stages": {
@@ -2169,7 +2182,7 @@
       "rankIndex": 3
     },
     "curriculum": {
-      "secondary": ["IGCSE", "A Level"],
+      "secondary": ["IGCSE", "A-Level"],
       "pathway": ["IGCSE-A Level"]
     },
     "stages": {
@@ -2280,7 +2293,7 @@
       "rankIndex": 3
     },
     "curriculum": {
-      "secondary": ["IGCSE", "A Level", "IBDP"],
+      "secondary": ["IGCSE", "A-Level", "IBDP"],
       "pathway": ["IGCSE-IBDP", "IGCSE-A Level"]
     },
     "stages": {
