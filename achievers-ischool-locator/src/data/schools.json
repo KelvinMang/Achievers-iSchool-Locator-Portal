@@ -9,8 +9,8 @@
     "abbreviation": "Carmel",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Transition",
+      "rankIndex": 4
     },
     "curriculum": {
       "secondary": ["IBMYP", "IBDP"],
@@ -35,7 +35,7 @@
       "rankIndex": 1
     },
     "curriculum": {
-      "secondary": ["IGCSE", "IMYC", "IBDP", "French Bac"],
+      "secondary": ["IGCSE", "IBDP"],
       "pathway": "IMYC-IBDP"
     },
     "stages": {
@@ -57,7 +57,7 @@
       "rankIndex": 1
     },
     "curriculum": {
-      "secondary": ["IGCSE", "IBDP", "German Abitur"],
+      "secondary": ["IGCSE", "IBDP"],
       "pathway": "IGCSE-IBDP"
     },
     "stages": {
@@ -75,8 +75,8 @@
     "abbreviation": "Montessori",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": null,
-      "rankIndex": null
+      "secondary": "Accessible",
+      "rankIndex": 3
     },
     "curriculum": {
       "secondary": [],
@@ -141,8 +141,8 @@
     "abbreviation": "Glenealy",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": null,
-      "rankIndex": null
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [],
@@ -167,7 +167,7 @@
       "rankIndex": 2
     },
     "curriculum": {
-      "secondary": ["IGCSE", "IBMYP", "IBDP", "BTEC"],
+      "secondary": ["IGCSE", "IBMYP", "IBDP"],
       "pathway": "IBMYP-IBDP"
     },
     "stages": {
@@ -185,8 +185,8 @@
     "abbreviation": "PS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": null,
-      "rankIndex": null
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [],
@@ -296,7 +296,7 @@
     "category": "Private / International (私立或國際)",
     "tier": {
       "secondary": "Accessible",
-      "rankIndex": 2
+      "rankIndex": 3
     },
     "curriculum": {
       "secondary": null,
@@ -321,7 +321,7 @@
       "rankIndex": 3
     },
     "curriculum": {
-      "secondary": ["HKDSE", "IBDP"],
+      "secondary": ["HKDSE", "IGCSE", "IBDP"],
       "pathway": "HKDSE-IBDP"
     },
     "stages": {
@@ -339,8 +339,8 @@
     "abbreviation": "KIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Transition",
+      "rankIndex": 4
     },
     "curriculum": {
       "secondary": ["IGCSE", "A-Level"],
@@ -354,12 +354,25 @@
   },
   {
     "name": "(ESF) Quarry Bay School",
-    "address": "6 Hau Yuen Path, Braemar Hill, Hong Kong",
+    "address": "12/F, Island Place Tower, 510 King's Road, North Point, Hong Kong",
     "lat": 22.284,
     "lng": 114.199,
     "chineseName": "(英基學校) 鰂魚涌小學",
     "abbreviation": "QBS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Middle",
+      "rankIndex": 2
+    },
+    "curriculum": {
+      "secondary": null,
+      "pathway": null
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "Discovery Bay International School",
@@ -368,7 +381,20 @@
     "lng": 114.008,
     "chineseName": "愉景灣國際學校",
     "abbreviation": "DBIS",
-    "category": "Private / International (私立或國際)"
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": null,
+      "pathway": null
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": true,
+      "secondary": false
+    }
   },
   {
     "name": "(ESF) Discovery College",
@@ -379,11 +405,11 @@
     "abbreviation": "Discovery",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Top",
-      "rankIndex": 1
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
-      "secondary": ["IGCSE", "IBMYP", "IBDP", "BTEC"],
+      "secondary": ["IGCSE", "IBMYP", "IBDP", "Others"],
       "pathway": "IBMYP-IBDP"
     },
     "stages": {
@@ -478,8 +504,8 @@
     "abbreviation": "AISHK",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Top",
-      "rankIndex": 1
+      "secondary": "Accessible",
+      "rankIndex": 3
     },
     "curriculum": {
       "secondary": ["IBDP"],
@@ -500,8 +526,8 @@
     "abbreviation": "BHS",
     "category": "Private / International (私立或國際)", 
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [],
@@ -544,8 +570,8 @@
     "abbreviation": "JCSRS",
     "category": "Private / International (私立或國際)", 
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Transition",
+      "rankIndex": 4
     },
     "curriculum": {
       "secondary": [
@@ -599,8 +625,8 @@
     "abbreviation": "Kingston",
     "category": "Private / International (私立或國際)", 
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Transition",
+      "rankIndex": 4
     },
     "curriculum": {
       "secondary": [],
@@ -621,8 +647,8 @@
     "abbreviation": "KJS",
     "category": "Private / International (私立或國際)", 
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [],
@@ -670,11 +696,11 @@
     "abbreviation": "SAIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
-      "secondary": ["American high school diploma", "IBDP"],
+      "secondary": ["IBDP"],
       "pathway": "American-IBDP"
     },
     "stages": {
@@ -692,8 +718,8 @@
     "abbreviation": "YCIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Accessible",
+      "rankIndex": 3
     },
     "curriculum": {
       "secondary": ["IGCSE", "IBDP"],
@@ -714,12 +740,13 @@
     "abbreviation": "NAIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Accessible",
+      "rankIndex": 3
     },
     "curriculum": {
       "secondary": [
         "IGCSE",
+        "A-Level",
         "IBDP"
       ],
       "pathway": [
@@ -792,8 +819,8 @@
     "abbreviation": "CWBS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [],
@@ -846,11 +873,11 @@
     },
     "curriculum": {
       "secondary": [
-        "DSE",
+        "HKDSE",
         "IBDP"
       ],
       "pathway": [
-        "DSE-IBDP"
+        "HKDSE-IBDP"
       ]
     },
     "stages": {
@@ -868,8 +895,8 @@
     "abbreviation": "HKA",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Transition",
+      "rankIndex": 4
     },
     "curriculum": {
       "secondary": [
@@ -901,7 +928,7 @@
     "curriculum": {
       "secondary": [
         "HKDSE",
-        "HKIBDP"
+        "IBDP"
       ],
       "pathway": [
         "DSE-IBDP"
@@ -951,7 +978,7 @@
       "secondary": [
         "IGCSE",
         "A-Level",
-        "DSE"
+        "HKDSE"
       ],
       "pathway": [
         "IGCSE-A Level"
@@ -972,13 +999,13 @@
     "abbreviation": "ICS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Accessible",
+      "rankIndex": 3
     },
     "curriculum": {
       "secondary": [
         "AP",
-        "SAT"
+        "IBDP"
       ],
       "pathway": [
         "AP-SAT"
@@ -998,6 +1025,10 @@
     "chineseName": "香港李寶椿聯合世界書院",
     "abbreviation": "LPCUWC",
     "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
     "curriculum": {
       "secondary": [
         "IBDP"
@@ -1047,8 +1078,8 @@
     "abbreviation": "RCHK",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Top",
-      "rankIndex": 1
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [
@@ -1074,8 +1105,8 @@
     "abbreviation": "STC",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Top",
-      "rankIndex": 1
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [
@@ -1102,8 +1133,8 @@
     "abbreviation": "SJS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [],
@@ -1122,7 +1153,20 @@
     "lng": 114.212,
     "chineseName": "香港神託會培基書院",
     "abbreviation": "SPKC",
-    "category": "Direct Subsidy Scheme (直資)"
+    "category": "Direct Subsidy Scheme (直資)",
+    "tier": {
+      "secondary": "Accessible",
+      "rankIndex": 3
+    },
+    "curriculum": {
+      "secondary": ["HKDSE", "A-Level"],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": false,
+      "primary": false,
+      "secondary": true
+    }
   },
   {
     "name": "Christian Alliance International School",
@@ -1268,8 +1312,8 @@
     "abbreviation": "CDNIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Top",
-      "rankIndex": 1
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": ["IBMYP", "IBDP"],
@@ -1334,8 +1378,8 @@
     "abbreviation": "Kennedy",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [],
@@ -1383,8 +1427,8 @@
     "abbreviation": "SIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Top",
-      "rankIndex": 1
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [
@@ -1438,8 +1482,8 @@
     "abbreviation": "THS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Transition",
+      "rankIndex": 4
     },
     "curriculum": {
       "secondary": [
@@ -1464,8 +1508,8 @@
     "abbreviation": "VSA",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Top",
-      "rankIndex": 1
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": ["IBMYP", "IBDP"],
@@ -1486,8 +1530,8 @@
     "abbreviation": "WIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Top",
-      "rankIndex": 1
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [
@@ -1606,11 +1650,11 @@
     "abbreviation": "NIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Transition",
+      "rankIndex": 4
     },
     "curriculum": {
-      "secondary": [],
+      "secondary": ["Others"],
       "pathway": ["Others"]
     },
     "stages": {
@@ -1628,11 +1672,11 @@
     "abbreviation": "SRIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Transition",
+      "rankIndex": 4
     },
     "curriculum": {
-      "secondary": ["IGCSE}", "A-Level"],
+      "secondary": ["IGCSE", "A-Level"],
       "pathway": ["IGCSE-A Level"]
     },
     "stages": {
@@ -1672,8 +1716,8 @@
     "abbreviation": "Bradbury",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [],
@@ -1867,11 +1911,11 @@
     "lat": 22.248,
     "lng": 114.148,
     "chineseName": "香港威雅學校",
-    "abbreviation": "WAS",
+    "abbreviation": "WASHK",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Transition",
+      "rankIndex": 4
     },
     "curriculum": {
       "secondary": ["IGCSE", "A-Level"],
