@@ -1,6 +1,90 @@
 
 [
   {
+    "name": "Victoria Kindergarten (Causeway Bay)",
+    "chineseName": "銅鑼灣維多利亞幼稚園",
+    "abbreviation": "CBVK",
+    "category": "Private / International (私立或國際)",
+    "address": "32 Hing Fat Street, Causeway Bay, Hong Kong",
+    "lat": 22.2835,
+    "lng": 114.1840,
+    "tier": { "secondary": "Top", "rankIndex": 1 },
+    "curriculum": { "secondary": [], "pathway": null },
+    "stages": { "kindergarten": true, "primary": false, "secondary": false }
+  },
+  {
+    "name": "Victoria Kindergarten (Belcher)",
+    "chineseName": "維多利亞(寶翠園)幼稚園",
+    "abbreviation": "VBK",
+    "category": "Private / International (私立或國際)",
+    "address": "3/F The Westwood, 8 Belchers Street, Hong Kong",
+    "lat": 22.2850,
+    "lng": 114.1320,
+    "tier": { "secondary": "Middle", "rankIndex": 2 },
+    "curriculum": { "secondary": [], "pathway": null },
+    "stages": { "kindergarten": true, "primary": false, "secondary": false }
+  },
+  {
+    "name": "Victoria Kindergarten (Harbour Heights)",
+    "chineseName": "維多利亞(海怡)國際幼稚園",
+    "abbreviation": "HHK",
+    "category": "Private / International (私立或國際)",
+    "address": "Phase 2 Podium Level, South Horizons, Ap Lei Chau, Hong Kong",
+    "lat": 22.2250,
+    "lng": 114.1470,
+    "tier": { "secondary": "Middle", "rankIndex": 2 },
+    "curriculum": { "secondary": [], "pathway": null },
+    "stages": { "kindergarten": true, "primary": false, "secondary": false }
+  },
+  {
+    "name": "Victoria Kindergarten (Kornhill)",
+    "chineseName": "康怡維多利亞幼稚園",
+    "abbreviation": "KVK",
+    "category": "Private / International (私立或國際)",
+    "address": "Kornhill Garden, 2/F, 18 Hong On Street, Quarry Bay, Hong Kong",
+    "lat": 22.2810,
+    "lng": 114.2250,
+    "tier": { "secondary": "Accessible", "rankIndex": 3 },
+    "curriculum": { "secondary": [], "pathway": null },
+    "stages": { "kindergarten": true, "primary": false, "secondary": false }
+  },
+  {
+    "name": "Victoria Kindergarten (Lower Kornhill)",
+    "chineseName": "維多利亞幼兒園暨幼稚園(下康怡)",
+    "abbreviation": "LKVK",
+    "category": "Private / International (私立或國際)",
+    "address": "Kornhill Garden, R Block G/F & Lower G/F, 2-8 Hong On Street, Quarry Bay, Hong Kong",
+    "lat": 22.2770,
+    "lng": 114.2210,
+    "tier": { "secondary": "Top", "rankIndex": 1 },
+    "curriculum": { "secondary": [], "pathway": null },
+    "stages": { "kindergarten": true, "primary": false, "secondary": false }
+  },
+  {
+    "name": "Victoria Kindergarten (Homantin)",
+    "chineseName": "維多利亞(何文田)國際幼稚園",
+    "abbreviation": "HMVK",
+    "category": "Private / International (私立或國際)",
+    "address": "G/F Grand View Court, 9 Cambridge Road, Ho Man Tin, Kowloon",
+    "lat": 22.3090,
+    "lng": 114.1810,
+    "tier": { "secondary": "Accessible", "rankIndex": 3 },
+    "curriculum": { "secondary": [], "pathway": null },
+    "stages": { "kindergarten": true, "primary": false, "secondary": false }
+  },
+  {
+    "name": "Magart International Kindergarten",
+    "chineseName": "瑪歌瑞特國際幼稚園",
+    "abbreviation": "MAGIK",
+    "category": "Private / International (私立或國際)",
+    "address": "Shop G3A, G/F, Site 7, Whampoa Garden, Hung Hom, Kowloon",
+    "lat": 22.3070,
+    "lng": 114.1890,
+    "tier": { "secondary": "Accessible", "rankIndex": 3 },
+    "curriculum": { "secondary": [], "pathway": null },
+    "stages": { "kindergarten": true, "primary": false, "secondary": false }
+  },
+  {
     "name": "Carmel School",
     "address": "1/F & 2/F West Wing, Classroom 229 & 229A & Portion of 1/F & 2/F East Wing, 10-12 Borrett Road, Hong Kong",
     "lat": 22.274,
@@ -355,8 +439,8 @@
   {
     "name": "(ESF) Quarry Bay School",
     "address": "12/F, Island Place Tower, 510 King's Road, North Point, Hong Kong",
-    "lat": 22.284,
-    "lng": 114.199,
+    "lat": 22.2883,
+    "lng": 114.2004,
     "chineseName": "(英基學校) 鰂魚涌小學",
     "abbreviation": "QBS",
     "category": "Private / International (私立或國際)",
@@ -935,7 +1019,7 @@
       ]
     },
     "stages": {
-      "kindergarten": true,
+      "kindergarten": false,
       "primary": true,
       "secondary": true
     }
