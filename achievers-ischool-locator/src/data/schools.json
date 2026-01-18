@@ -215,7 +215,7 @@
       "pathway": "HKDSE-IBDP"
     },
     "stages": {
-      "kindergarten": false,
+      "kindergarten": true,
       "primary": true,
       "secondary": true
     }
@@ -237,8 +237,8 @@
       "pathway": "HKDSE-A Level"
     },
     "stages": {
-      "kindergarten": false,
-      "primary": false,
+      "kindergarten": true,
+      "primary": true,
       "secondary": true
     }
   },
@@ -1790,7 +1790,7 @@
       "pathway": ["Others"]
     },
     "stages": {
-      "kindergarten": false,
+      "kindergarten": true,
       "primary": true,
       "secondary": true
     }
