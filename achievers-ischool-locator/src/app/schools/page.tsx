@@ -1,6 +1,5 @@
 "use client";
 
-import { BASE_PATH } from "@/lib/basePath";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
@@ -153,7 +152,7 @@ export default function SchoolsDirectoryPage() {
       <header className="sticky top-0 z-50 border-b border-achievers-primary/10 bg-achievers-primary">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 lg:px-6">
           <Image
-            src={`${BASE_PATH}/achievers-logo-white.png`}
+            src="/achievers-logo-white.png"
             alt="The Achievers"
             width={260}
             height={70}
