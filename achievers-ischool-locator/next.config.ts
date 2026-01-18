@@ -1,17 +1,22 @@
 // achievers-ischool-locator/next.config.ts
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
 const repo = "Achievers-iSchool-Locator-Portal";
+const isProd = process.env.NODE_ENV === "production";
 
-export default {
+const nextConfig = {
   output: "export",
+  images: { unoptimized: true },
+
+  // GitHub Pages subpath
   basePath: isProd ? `/${repo}` : "",
   assetPrefix: isProd ? `/${repo}/` : "",
-  images: {
-    unoptimized: true,
-  },
+
+  // Important for Pages routing (creates /schools/index.html)
+  trailingSlash: true,
 };
+
+export default nextConfig;
 
 // const isProd = process.env.NODE_ENV === "production";
 // const repo = "Achievers-iSchool-Locator-Portal";
