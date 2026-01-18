@@ -2,21 +2,21 @@
 import type { NextConfig } from "next";
 
 const repo = "Achievers-iSchool-Locator-Portal";
-const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
   output: "export",
   images: { unoptimized: true },
 
-  // GitHub Pages subpath
-  basePath: isProd ? `/${repo}` : "",
-  assetPrefix: isProd ? `/${repo}/` : "",
-
-  // Important for Pages routing (creates /schools/index.html)
+  // IMPORTANT for GitHub Pages routes like /schools/
   trailingSlash: true,
+
+  // Keep basePath OFF if you want to use BASE_PATH in code everywhere
+  // basePath: `/${repo}`,        // <-- DO NOT enable if you hardcode BASE_PATH
+  // assetPrefix: `/${repo}/`,    // <-- DO NOT enable if you hardcode BASE_PATH
 };
 
 export default nextConfig;
+
 
 // const isProd = process.env.NODE_ENV === "production";
 // const repo = "Achievers-iSchool-Locator-Portal";
