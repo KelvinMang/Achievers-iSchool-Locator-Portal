@@ -93,8 +93,8 @@
     "abbreviation": "Carmel",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Transition",
-      "rankIndex": 4
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": ["IBMYP", "IBDP"],
@@ -115,8 +115,8 @@
     "abbreviation": "FIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Top",
-      "rankIndex": 1
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": ["IGCSE", "IBDP"],
@@ -225,8 +225,8 @@
     "abbreviation": "Glenealy",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [],
@@ -247,8 +247,8 @@
     "abbreviation": "Island",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": ["IGCSE", "IBMYP", "IBDP"],
@@ -269,8 +269,8 @@
     "abbreviation": "PS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [],
@@ -357,8 +357,8 @@
     "abbreviation": "DSC",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Transition",
+      "rankIndex": 4
     },
     "curriculum": {
       "secondary": ["HKDSE", "IBDP"],
@@ -423,8 +423,8 @@
     "abbreviation": "KIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Transition",
-      "rankIndex": 4
+      "secondary": "Accessible",
+      "rankIndex": 3
     },
     "curriculum": {
       "secondary": ["IGCSE", "A-Level"],
@@ -445,8 +445,8 @@
     "abbreviation": "QBS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": null,
@@ -467,8 +467,8 @@
     "abbreviation": "DBIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": null,
@@ -489,8 +489,8 @@
     "abbreviation": "Discovery",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": ["IGCSE", "IBMYP", "IBDP", "Others"],
@@ -588,8 +588,8 @@
     "abbreviation": "AISHK",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": ["IBDP"],
@@ -610,8 +610,8 @@
     "abbreviation": "BHS",
     "category": "Private / International (私立或國際)", 
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [],
@@ -680,8 +680,8 @@
     "abbreviation": "KGV",
     "category": "Private / International (私立或國際)", 
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [
@@ -731,8 +731,8 @@
     "abbreviation": "KJS",
     "category": "Private / International (私立或國際)", 
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [],
@@ -780,8 +780,8 @@
     "abbreviation": "SAIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Accessible",
+      "rankIndex": 3
     },
     "curriculum": {
       "secondary": ["IBDP"],
@@ -802,8 +802,8 @@
     "abbreviation": "YCIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": ["IGCSE", "IBDP"],
@@ -824,8 +824,8 @@
     "abbreviation": "NAIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [
@@ -903,8 +903,8 @@
     "abbreviation": "CWBS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [],
@@ -979,8 +979,8 @@
     "abbreviation": "HKA",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Transition",
-      "rankIndex": 4
+      "secondary": "Accessible",
+      "rankIndex": 3
     },
     "curriculum": {
       "secondary": [
@@ -1083,8 +1083,8 @@
     "abbreviation": "ICS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [
@@ -1162,8 +1162,8 @@
     "abbreviation": "RCHK",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [
@@ -1189,8 +1189,8 @@
     "abbreviation": "STC",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [
@@ -1217,8 +1217,8 @@
     "abbreviation": "SJS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [],
@@ -1285,7 +1285,7 @@
     "address": "68 Begonia Road, Yau Yat Chuen, Kowloon, Hong Kong",
     "lat": 22.337,
     "lng": 114.174,
-    "chineseName": "上海協和國際外籍人員子女學校",
+    "chineseName": "協同國際學校",
     "abbreviation": "Concordia",
     "category": "Private / International (私立或國際)",
     "tier": {
@@ -1462,8 +1462,8 @@
     "abbreviation": "Kennedy",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [],
@@ -1511,8 +1511,8 @@
     "abbreviation": "SIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [
@@ -1614,8 +1614,8 @@
     "abbreviation": "WIS",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [
@@ -1642,8 +1642,8 @@
     "abbreviation": "ASHK",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": [
@@ -1800,8 +1800,8 @@
     "abbreviation": "Bradbury",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Middle",
-      "rankIndex": 2
+      "secondary": "Top",
+      "rankIndex": 1
     },
     "curriculum": {
       "secondary": [],
@@ -1998,8 +1998,8 @@
     "abbreviation": "WASHK",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Transition",
-      "rankIndex": 4
+      "secondary": "Accessible",
+      "rankIndex": 3
     },
     "curriculum": {
       "secondary": ["IGCSE", "A-Level"],
@@ -2240,8 +2240,8 @@
     "abbreviation": "Invictus",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Transition",
+      "rankIndex": 4
     },
     "curriculum": {
       "secondary": ["IGCSE", "A-Level"],
@@ -2266,7 +2266,7 @@
       "rankIndex": 4
     },
     "curriculum": {
-      "secondary": ["Others"],
+      "secondary": ["AP"],
       "pathway": ["AP-SAT"]
     },
     "stages": {
@@ -2417,8 +2417,8 @@
     "abbreviation": "TKHC",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Accessible",
-      "rankIndex": 3
+      "secondary": "Transition",
+      "rankIndex": 4
     },
     "curriculum": {
       "secondary": ["IGCSE", "A-Level", "IBDP"],
@@ -2439,8 +2439,8 @@
     "abbreviation": "YK PAO",
     "category": "Private / International (私立或國際)",
     "tier": {
-      "secondary": "Top",
-      "rankIndex": 1
+      "secondary": "Middle",
+      "rankIndex": 2
     },
     "curriculum": {
       "secondary": ["IBMYP", "IBDP"],
@@ -2450,6 +2450,138 @@
       "kindergarten": true,
       "primary": true,
       "secondary": true
+    }
+  },
+  {
+    "name": "ESF Language & Learning Centre",
+    "address": "G/F, 8 Cox's Road, Jordan, Kowloon, Hong Kong",
+    "lat": 22.304,
+    "lng": 114.171,
+    "chineseName": "英基語言及學習中心",
+    "abbreviation": "ESF LLC",
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": false,
+      "secondary": false
+    }
+  },
+  {
+    "name": "ESF Tung Chung International Kindergarten",
+    "address": "1/F, Fu Tung Plaza, Fu Tung Estate, Tung Chung, Lantau, Hong Kong",
+    "lat": 22.289,
+    "lng": 113.944,
+    "chineseName": "英基東涌國際幼稚園",
+    "abbreviation": "TCIK",
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": false,
+      "secondary": false
+    }
+  },
+  {
+    "name": "ESF Hillside International Kindergarten",
+    "address": "1/F, 43B Stubbs Road, Mid-Levels East, Hong Kong",
+    "lat": 22.268,
+    "lng": 114.192,
+    "chineseName": "英基曉新國際幼稚園",
+    "abbreviation": "HIK",
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": false,
+      "secondary": false
+    }
+  },
+  {
+    "name": "ESF Abacus International Kindergarten",
+    "address": "2/F, Noble Place, 33 Man Fuk Road, Ho Man Tin, Kowloon, Hong Kong",
+    "lat": 22.315,
+    "lng": 114.179,
+    "chineseName": "英基雅柏國際幼稚園",
+    "abbreviation": "AIK",
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": false,
+      "secondary": false
+    }
+  },
+  {
+    "name": "ESF Wu Kai Sha International Kindergarten",
+    "address": "G/F, Ma On Shan Wu Kai Sha Station, New Territories, Hong Kong",
+    "lat": 22.429,
+    "lng": 114.243,
+    "chineseName": "英基烏溪沙國際幼稚園",
+    "abbreviation": "WKSIK",
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": false,
+      "secondary": false
+    }
+  },
+  {
+    "name": "ESF Tsing Yi International Kindergarten",
+    "address": "1/F, Tsing Yi Sports Ground, Tsing Yi, New Territories, Hong Kong",
+    "lat": 22.349,
+    "lng": 114.107,
+    "chineseName": "英基青衣國際幼稚園",
+    "abbreviation": "TYIK",
+    "category": "Private / International (私立或國際)",
+    "tier": {
+      "secondary": "Top",
+      "rankIndex": 1
+    },
+    "curriculum": {
+      "secondary": [],
+      "pathway": []
+    },
+    "stages": {
+      "kindergarten": true,
+      "primary": false,
+      "secondary": false
     }
   }
 ]
